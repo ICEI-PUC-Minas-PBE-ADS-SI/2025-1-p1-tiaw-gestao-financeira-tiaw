@@ -12,7 +12,10 @@
 
 
 
-> * **Mapa de stakeholders**: ![alt text](image-8.png)
+> * **Mapa de stakeholders**:
+
+
+ ![alt text](image-8.png)
 
 
 
@@ -38,7 +41,11 @@
 
 
 
-> * **Highlights de pesquisa**: ![alt text](image-1.png)
+> * **Highlights de pesquisa**: 
+
+
+
+![alt text](image-1.png)
 
 
 
