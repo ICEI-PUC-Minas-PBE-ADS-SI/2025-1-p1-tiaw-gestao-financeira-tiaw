@@ -2,12 +2,12 @@
 
 <span style="color:red">Pré-requisitos: <a href="01-Contexto.md"> Documentação de contexto</a></span>
 
-✅ [Documentação de Design Thinking (MIRO)]![alt text](image.png)
+✅ [Documentação de Design Thinking (MIRO)]![alt text](imagens-doc02/image.png)
 
 ## Etapa de entendimento
 
 
-> * **Matriz CSD**:![alt text](image-5.png)
+> * **Matriz CSD**:![alt text](imagens-doc02/image-5.png)
 
 
 
@@ -15,7 +15,7 @@
 > * **Mapa de stakeholders**:
 
 
- ![alt text](image-8.png)
+ ![alt text](imagens-doc02/image-8.png)
 
 
 
@@ -25,14 +25,14 @@
 
 > * **Entrevistas qualitativas**:
     
-![alt text](image-9.png)
+![alt text](imagens-doc02/image-9.png)
 
 
 
-![alt text](image-7.png)
+![alt text](imagens-doc02/image-7.png)
 
 
-![alt text](image-10.png)
+![alt text](imagens-doc02/image-10.png)
 
 
 
@@ -45,7 +45,7 @@
 
 
 
-![alt text](image-1.png)
+![alt text](imagens-doc02/image-1.png)
 
 
 
@@ -65,12 +65,12 @@
 
 ### Persona
 
-![alt text](image-2.png)
+![alt text](imagens-doc02/image-2.png)
 
 
-![alt text](image-12.png)
+![alt text](imagens-doc02/image-12.png)
 
-![alt text](image-11.png)
+![alt text](imagens-doc02/image-11.png)
 
 
 > **Links úteis**:
