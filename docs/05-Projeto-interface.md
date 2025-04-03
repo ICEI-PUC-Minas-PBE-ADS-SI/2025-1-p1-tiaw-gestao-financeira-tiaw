@@ -10,26 +10,26 @@
  ## User flow
 
 
-![figma](<Captura de tela 2025-03-31 201238.png>)
-![figma](<Captura de tela 2025-03-31 201228.png>)
-![figma](<Captura de tela 2025-03-31 201218-1.png>)
-![figma](<Captura de tela 2025-03-31 200944-1.png>)
-![figma](<Captura de tela 2025-03-31 200755.png>)
-![figma](<Captura de tela 2025-03-31 200755-1.png>)
+![figma](</images/Captura de tela 2025-03-31 201238.png>)
+![figma](</images/Captura de tela 2025-03-31 201228.png>)
+![figma](</images/Captura de tela 2025-03-31 201218-1.png>)
+![figma](</images/Captura de tela 2025-03-31 200944-1.png>)
+![figma](</images/Captura de tela 2025-03-31 200755.png>)
+![figma](</images/Captura de tela 2025-03-31 200755-1.png>)
 
 ## Wireframes
-![CONTATO](CONTATO.FIGMA.png)
-![ed.financeira](EDUCAÇÃOFINANCEIRA.FIGMA.png)
-![Favoritos](FAVORITOS.FIGMA.png) 
-![Home](HOME.FIGMA.png) 
-![Investimentos](INVESTIMENTOS.FIGMA.png)
-![Login](LOGINUSÚARIO.FIGMA.png) 
-![Menu](MENU.FIGMA.png)
-![Minha conta](MINHACONTA.FIGMA.png)
-![News](NOTÍCIAS.FIGMA.png) 
-![Pesquise aqui](PESQUISEAQUI.FIGMA.png)
-![Planilha](PLANILHA.FIGMA.png)
-![Tutoriais](TUTORIAIS.FIGMA.png)
+![CONTATO](/images/CONTATO.FIGMA.png)
+![ed.financeira](/images/EDUCAÇÃOFINANCEIRA.FIGMA.png)
+![Favoritos](/images/FAVORITOS.FIGMA.png) 
+![Home](/images/HOME.FIGMA.png) 
+![Investimentos](/images/INVESTIMENTOS.FIGMA.png)
+![Login](/images/LOGINUSÚARIO.FIGMA.png) 
+![Menu](/images/MENU.FIGMA.png)
+![Minha conta](/images/MINHACONTA.FIGMA.png)
+![News](/images/NOTÍCIAS.FIGMA.png) 
+![Pesquise aqui](/images/PESQUISEAQUI.FIGMA.png)
+![Planilha](/images/PLANILHA.FIGMA.png)
+![Tutoriais](/images/TUTORIAIS.FIGMA.png)
 
 
 ### Protótipo Interativo
