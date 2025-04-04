@@ -3,11 +3,15 @@
 
 <span style="color:red">Pré-requisitos: <a href="03-Product-design.md"> Product design</a></span>
 
-Descreva aqui a metodologia de trabalho do grupo para abordar o problema. Inclua definições sobre os ambientes de trabalho utilizados pela equipe para desenvolver o projeto. Isso abrange a relação dos ambientes utilizados, a estrutura para a gestão do código-fonte, além da definição do processo e das ferramentas por meio dos quais a equipe se organiza (gestão de equipes).
+Durante o processo de design, várias ideias foram cotadas como planilha de gastos, educação geral em diversos assuntos como dicas para lidar com dinheiro, investimento, fazer como sobrar mais durante o mês, e a utilização de algumas plataformas foi fundamental como por exemplo o WhatsApp e Discord para reuniões e troca de ideias, Canva e Miro para projetar a ideia e design e o Figma para prototipação do mesmo.
 
 ## Relação de ambientes de trabalho
 
-Os artefatos do projeto são desenvolvidos a partir de diversas plataformas. A relação dos ambientes com seus respectivos propósitos deverá ser apresentada em uma tabela que especifique e detalhe Ambiente, Plataforma e Link de Acesso. Defina também os ambientes e frameworks que serão utilizados no desenvolvimento de aplicações móveis.
+Ambiente                 | Plataforma              | Link de Acesso
+Comunicação da Equipe    | WhatsApp e Discord      | https://discord.com | https://www.whatsapp.com/
+Prototipação             | Miro, Figma e Canva     | https://miro.com https://canva.com  
+Desenvolvimento          | Vs StudioCode e GitHube | https://github.com https://code.visualstudio.com/
+
 
 ## Controle de versão
 
