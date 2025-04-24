@@ -1,8 +1,8 @@
-#CURSO: Sistemas de Informação
+`CURSO: Sistemas de Informação`
 
-#DISCIPLINA: Trabalho Interdisciplinar Aplicações Web
+`DISCIPLINA: Trabalho Interdisciplinar Aplicações Web`
 
-1º semestre/2025
+`1º semestre/2025`
 
 O projeto do grupo tem como objetivo oferecer suporte a pessoas em diferentes situações financeiras, desde aquelas que se encontram endividadas até aquelas que possuem recursos extras disponíveis e que não sabem como proceder. Para os primeiros, o objetivo é proporcionar orientações que possibilitem a melhoria das condições e da situação de vulnerabilidade. Já para os que dispõem de recursos, o projeto pretende fornecer noções mais básicas de ensino sobre o funcionamento do cenário de investimentos, contribuindo para que façam escolhas mais assertivas e conscientes.
 
