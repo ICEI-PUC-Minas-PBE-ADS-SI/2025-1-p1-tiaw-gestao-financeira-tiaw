@@ -1,26 +1,21 @@
-# Nome do projeto
+#CURSO: Sistemas de Informação
 
-`CURSO: Coloque o nome do curso aqui, sem abreviações`
+#DISCIPLINA: Trabalho Interdisciplinar Aplicações Web
 
-`DISCIPLINA: Trabalho Interdisciplinar Aplicações Web`
+1º semestre/2025
 
-`Xº semestre/ANO`
+O projeto do grupo tem como objetivo oferecer suporte a pessoas em diferentes situações financeiras, desde aquelas que se encontram endividadas até aquelas que possuem recursos extras disponíveis e que não sabem como proceder. Para os primeiros, o objetivo é proporcionar orientações que possibilitem a melhoria das condições e da situação de vulnerabilidade. Já para os que dispõem de recursos, o projeto pretende fornecer noções mais básicas de ensino sobre o funcionamento do cenário de investimentos, contribuindo para que façam escolhas mais assertivas e conscientes.
 
-Escreva um ou dois parágrafos resumindo o objetivo do seu projeto.
-
-## Integrantes
-
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
-* Nome completo do aluno 6
-
-## Professor
-
-* Nome completo do(a) professor(a)
-
+Integrantes
+Arthur Soares Gandra
+Bernardo Maia Lomas Ameno
+Daniel Meireles Aquino Jorge
+Danton Rodrigues Diniz
+João Vitor Alves Amaral
+João Vitor Vieira Guedes
+João Victor Batista Carneiro
+Professor
+Jardell Fillipe da Silva
 ## Instruções de utilização
 
 Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
