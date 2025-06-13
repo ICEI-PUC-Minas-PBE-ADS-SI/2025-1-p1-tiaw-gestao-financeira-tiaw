@@ -2,22 +2,22 @@ cff-version: 1.2.0
 message: Please cite this software using these metadata.
 title: Coloque aqui o título do seu trabalho
 authors:
-  - family-names: Sobrenome do aluno 1
-    given-names: Nome do aluno 1 
-  - family-names: Sobrenome do aluno 2
-    given-names: Nome do aluno 2 
-  - family-names: Sobrenome do aluno 3
-    given-names: Nome do aluno 3 
-  - family-names: Sobrenome do aluno 4
-    given-names: Nome do aluno 4 
-  - family-names: Sobrenome do aluno 5
-    given-names: Nome do aluno 5 
-  - family-names: Sobrenome do aluno 6
-    given-names: Nome do aluno 6 
-  - name-suffix: Professor
+  - family-names: Maia Lomas Ameno
+    given-names: Bernardo 
+  - family-names: Meireles Aquino Jorge
+    given-names: Daniel
+  - family-names: Rodrigues Diniz
+    given-names: Danton
+  - family-names: Batista Carneiro
+    given-names: João Victor  
+  - family-names: Alves Amaral
+    given-names: João Vitor 
+  - family-names: Vieira Guedes
+    given-names: João Vitor 
+  - name-suffix: Jardell Fillipe da Silva
     affiliation: PUC Minas
-    family-names: Sobrenome do(a) professor(a)
-    given-names: Nome do(a) professor(a)
+    family-names: da Silva
+    given-names: Jardell Fillipe
   - name-suffix: Professora
     affiliation: PUC Minas    
 keywords:
