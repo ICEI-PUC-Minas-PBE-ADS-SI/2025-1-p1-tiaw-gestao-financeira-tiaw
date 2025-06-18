@@ -2,7 +2,7 @@
 A ideia inicial do projeto é criar um ambiente de educação financeira visando ajudar o público em geral que não possui conhecimento prévio sobre o assunto e deseja melhorar sua condição financeira. A principal motivação desse projeto vem da atual realidade de muitos brasileiros, onde cerca de 78% estão endividados e possivelmente não sabem como reverter essa situação.
 
 ## Problema
-O problema que o projeto visa resolver é basicamente a educação financeira no Brasil, visto que grande parte dos brasileiros não teve acesso a esse tipo de conteúdo em nenhum momento de suas vidas, seja pela negligência estatal em não inserir esse tipo de estudo nas redes de ensino públicas, a cultura consumista enraizada na mente de milhares de pessoas, além da baixa procura por parte dos próprios brasileiros. 
+O problema que o projeto visa resolver é basicamente a educação financeira no Brasil, visto que grande parte dos brasileiros não teve acesso a esse tipo de conteúdo em nenhum momento de suas vidas, seja pela negligência estatal em não inserir esse tipo de estudo nas redes de ensino públicas, seja pela cultura consumista enraizada na mente de milhares de pessoas, além da baixa procura por parte dos próprios brasileiros. 
 Tais problemas impactam em outras questões, como o porquê de muitos estarem endividados por simplesmente não saberem como usar suas rendas de maneira inteligente e rentável, ou por serem extremamente consumistas, além de outras diversas vertentes que influenciam diretamente na condição financeira de um civil.
 A aplicação pode ser usada em todo âmbito educacional, como também pode servir de auxílio em estudos autônomos, podendo ajudar nas mais diversas realidades.
 

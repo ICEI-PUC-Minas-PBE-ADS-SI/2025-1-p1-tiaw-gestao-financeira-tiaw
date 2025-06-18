@@ -9,8 +9,8 @@ Durante o processo de design, várias ideias foram cotadas como planilha de gast
 
 Ambiente                 | Plataforma              | Link de Acesso
 Comunicação da Equipe    | WhatsApp e Discord      | https://discord.com | https://www.whatsapp.com/
-Prototipação             | Miro, Figma e Canva     | https://miro.com https://canva.com  
-Desenvolvimento          | Vs StudioCode e GitHube | https://github.com https://code.visualstudio.com/
+Prototipação             | Miro, Figma e Canva     | https://miro.com https://canva.com  https://www.figma.com/
+Desenvolvimento          | Vs StudioCode e GitHub  | https://github.com https://code.visualstudio.com/
 
 
 ## Controle de versão

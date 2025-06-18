@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: Please cite this software using these metadata.
-title: Coloque aqui o título do seu trabalho
+title: +Grana Gestão Financeira
 authors:
   - family-names: Maia Lomas Ameno
     given-names: Bernardo 
@@ -21,9 +21,9 @@ authors:
   - name-suffix: Professora
     affiliation: PUC Minas    
 keywords:
-    - coloque aqui a palavra-chave 1
-    - coloque aqui a palavra-chave 2
-    - coloque aqui a palavra-chave 3
+    - Finanças
+    - Educação
+    - Metas
 repository-code: coloque o link do seu repositório
 license: CC-BY-4.0
 version: 1.0.0
