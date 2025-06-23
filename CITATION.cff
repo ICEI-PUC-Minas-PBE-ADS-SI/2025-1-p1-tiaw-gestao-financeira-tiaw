@@ -1,5 +1,4 @@
 cff-version: 1.2.0
-message: Please cite this software using these metadata.
 title: +Grana Gestão Financeira
 authors:
   - family-names: Maia Lomas Ameno
@@ -18,13 +17,11 @@ authors:
     affiliation: PUC Minas
     family-names: da Silva
     given-names: Jardell Fillipe
-  - name-suffix: Professora
     affiliation: PUC Minas    
 keywords:
     - Finanças
     - Educação
     - Metas
-repository-code: coloque o link do seu repositório
 license: CC-BY-4.0
 version: 1.0.0
 date-released: 2024-09-01
