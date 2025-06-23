@@ -5,91 +5,68 @@
 
 Durante o processo de design, várias ideias foram cotadas como planilha de gastos, educação geral em diversos assuntos como dicas para lidar com dinheiro, investimento, fazer como sobrar mais durante o mês, e a utilização de algumas plataformas foi fundamental como por exemplo o WhatsApp e Discord para reuniões e troca de ideias, Canva e Miro para projetar a ideia e design e o Figma para prototipação do mesmo.
 
+
 ## Relação de ambientes de trabalho
 
-Ambiente                 | Plataforma              | Link de Acesso
-Comunicação da Equipe    | WhatsApp e Discord      | https://discord.com | https://www.whatsapp.com/
-Prototipação             | Miro, Figma e Canva     | https://miro.com https://canva.com  https://www.figma.com/
-Desenvolvimento          | Vs StudioCode e GitHub  | https://github.com https://code.visualstudio.com/
+| Ambiente                 | Plataforma              | Link de Acesso                                             |
+|-----------------------------------------------------------------------------------------------------------------|
+| Comunicação da Equipe    | WhatsApp e Discord      | https://discord.com | https://www.whatsapp.com/            |
+| Prototipação             | Miro, Figma e Canva     | https://miro.com https://canva.com  https://www.figma.com/ |
+| Desenvolvimento          | Vs StudioCode e GitHub  | https://github.com https://code.visualstudio.com/          |
+|-----------------------------------------------------------------------------------------------------------------|
 
 
 ## Controle de versão
+A ferramenta utilizada no projeto foi o Git, hospedando o repositório no GitHub. Discutido com professor, desenvolvemos o projeto em ambiente separado e adicionamos o código no repositório final. Sendo assim, essa vai ser a primeira versão do projeto.
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
+Branches
+A versão final do projeto só terá a utilização da main, visto que foi feito no repositório externo desde o início.
 
-A ferramenta de controle de versão adotada no projeto foi o [Git](https://git-scm.com/), sendo que o [GitHub](https://github.com) foi utilizado para hospedagem do repositório.
+Commits e tags
+Utilizaremos somente a tag de versão v1.0.0 para representar o projeto finalizado
 
-O projeto segue a seguinte convenção para o nome de branches:
+Merge e Issues
+Como não foi utilizado diferentes branches, não realizamos merges nem utilizamos o sistema de issues.
 
-- `main`: versão estável já testada do software
-- `unstable`: versão já testada do software, porém instável
-- `testing`: versão em testes do software
-- `dev`: versão de desenvolvimento do software
-
-Quanto à gerência de issues, o projeto adota a seguinte convenção para etiquetas:
-
-- `documentation`: melhorias ou acréscimos à documentação
-- `bug`: uma funcionalidade encontra-se com problemas
-- `enhancement`: uma funcionalidade precisa ser melhorada
-- `feature`: uma nova funcionalidade precisa ser introduzida
-
-Discuta como a configuração do projeto foi feita na ferramenta de versionamento escolhida. Exponha como a gestão de tags, merges, commits e branches é realizada. Discuta também como a gestão de issues foi feita.
-
-> **Links úteis**:
-> - [Tutorial GitHub](https://guides.github.com/activities/hello-world/)
-> - [Git e GitHub](https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA)
-> - [Comparando fluxos de trabalho](https://www.atlassian.com/br/git/tutorials/comparing-workflows)
-> - [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
-> - [The gitflow workflow - in less than 5 mins](https://www.youtube.com/watch?v=1SXpE08hvGs)
 
 ## Planejamento do projeto
 
 ###  Divisão de papéis
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
-
-> A equipe utiliza o Scrum como base para definição do processo de desenvolvimento. [Adicione informações abaixo sobre a divisão de papéis entre os membros da equipe.]
-
-- Scrum Master: nome de um membro da equipe, principal responsável pela gestão do projeto.
-- Product Owner: nome de um membro da equipe, representante dos interesses de todos os envolvidos (stakeholders), define as funcionalidades do produto e prioriza os itens de Product Backlog.
-- Equipe de Desenvolvimento: nomes de todos os membros da equipe, pois todos os membros deverão implementar no mínimo duas telas/funcionalidades.
-- Equipe de Design: nomes dos membros da equipe que trabalharão com design.
-
-> **Links úteis**:
-> - [11 passos essenciais para implantar Scrum no seu projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
-> - [Os papéis do Scrum e a verdade sobre cargos nessa técnica](https://www.atlassian.com/br/agile/scrum/roles)
+Para divisão dos papeis dividimos por requisitos e cada aluno ficou responsável por um artefato para cada Sprint enviada, já que havia sido estabelecido pela disciplina e projeto como seria feita a divisão.
 
 ### Processo
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
+Por meio da Matriz CSD foi elabora um mapa de stakeholders, com objetivo de mapear quem seriam os principais públicos para a nossa solução, com isso identificamos que existem diversos perfis diferentes que precisam de auxilio para lidar com dinheiro.
+Com a entrevista conseguimos construir as personas e entender quais seriam as principais dores, comportamentos e necessidades dos usuários, o que ajudou a nortear qual seria o foco do projeto.
+Com base nas dores encontradas, a solução que propusemos foi o desenvolvimento de um site de gestão financeira com foco em ensinar os básico de finanças, que mostra as principais notícias da área de economia e que apresenta dicas sobre gastos e investimentos. Além de ferramentas que auxiliam o usuário a lidar com suas finanças e desenvolver metas para atingir seus objetivos.
 
-Coloque detalhes sobre o processo de Design Thinking e a implementação do Framework Scrum seguido pelo grupo. O grupo deverá fazer uso do recurso de gerenciamento de projeto oferecido pelo GitHub, o GitHub Projects, que permite acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução. 
+A primeira divisão que fizemos construíram a estrutura e artefatos principais do site
+![Sprint 1](/imgs/Metodologia/planejamento-Sprint-1.png)
 
+Na segunda divisão dividimos as features que são complementais e não essenciais para o site.
+![Sprint 2](/imgs/Metodologia/planejamento-Sprint-2.png)
+
+<!-- Colocar um print do kanban e link dele -->
 Coloque uma imagem da estrutura da ferramenta de controle de tarefas (Kanban) e o link do GitHub Projects.
- 
-> **Links úteis**:
-> - [GitHub Projects - YouTube](https://www.youtube.com/playlist?list=PLiO7XHcmTsldZR93nkTFmmWbCEVF_8F5H)
-> - [Planejamento e gestão ágil de projetos](https://pucminas.instructure.com/courses/87878/pages/unidade-2-tema-2-utilizacao-de-ferramentas-para-controle-de-versoes-de-software)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/issues/organizing-your-work-with-project-boards/managing-project-boards/about-project-boards)
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Como criar backlogs no GitHub](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial slack](https://slack.com/intl/en-br/)
+
 
 ### Ferramentas
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
+Utilizamos o GitHub para armazenar e gerenciar o projeto para fácil edição e atualização do trabalho durante o desenvolvimento e o GitHub Projects para gerenciar os artefatos e requisitos.
+Canva para edição do design e toda a parte visual por sua praticidade de edição em equipe e individual, além de sua grande variedade de ferramentas.
+Miro para fazer o processo de Design Thinking para edição em conjunto das entregas relativas ao produto entregue.
+Figma para prototipação do projeto, suas ligações e user flow.
+Discord e WhatsApp para comunicação em tempo real durante as tarefas e atualizações do projeto.  
 
-Liste todas as ferramentas que foram empregadas no projeto, justificando a escolha delas, sempre que possível. Inclua itens como: (1) editor de código, (2) ferramentas de comunicação, (3) ferramentas de diagramação, (4) plataformas de hospedagem, entre outras.
-
-⚠️ EXEMPLO ⚠️ os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito é apresentada na tabela que se segue.
-
-| Ambiente                            | Plataforma                         | Link de acesso                       |
-|-------------------------------------|------------------------------------|--------------------------------------|
-| Processo de Design Thinking         | Miro                               | https://....   ⚠️ EXEMPLO ⚠️        |
-| Repositório de código fonte         | GitHub                             | https://....   ⚠️ EXEMPLO ⚠️        |
-| Documentos do projeto               | GitHub                             | http://....    ⚠️ EXEMPLO ⚠️        |
-| Gerenciamento do projeto            | GitHub Projects                    | http://....    ⚠️ EXEMPLO ⚠️        |
-| Projeto de interface                | Figma                              | http://....    ⚠️ EXEMPLO ⚠️        |
-| Hospedagem                          | Vercel                             | http://....    ⚠️ EXEMPLO ⚠️        |
- 
+| Ambiente                      | Plataforma          | Link de acesso                                                                                               |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Comunicação                   | Discord             |  https://discord.com/                                                                                        |
+| Comunicação                   | WhatsApp            |  https://www.whatsapp.com/?lang=pt_BR                                                                        |
+| Design e layout do site       | Canva               |  https://www.canva.com/                                                                                      |
+| Documentos do projeto         | GitHub              |  https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p1-tiaw-gestao-financeira-tiaw                          |
+| Gerenciamento do projeto      | GitHub Projects     |  https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p1-tiaw-gestao-financeira-tiaw/projects?query=is%3Aopen |
+| Processo de Design Thinking   | Miro                |  https://miro.com/index/                                                                                     |
+| Projeto de interface          | Figma               |  https://www.figma.com/                                                                                      |
+| Repositório de código fonte   | GitHub              |  https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p1-tiaw-gestao-financeira-tiaw/tree/main/src            |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|

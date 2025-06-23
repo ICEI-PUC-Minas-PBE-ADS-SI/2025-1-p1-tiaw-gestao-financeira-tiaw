@@ -7,29 +7,65 @@
 
  Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados na parte de <a href="03-Product-design.md"> product design</a></span>.
 
- ## User flow
+## User flow
 
+Página Home Investimento, Educação e Notícias, ligadas pela NavBar:
+![Homes](imgs/figma/homes.png)
 
-![figma](</images/Captura de tela 2025-03-31 201238.png>)
-![figma](</images/Captura de tela 2025-03-31 201228.png>)
-![figma](</images/Captura de tela 2025-03-31 201218-1.png>)
-![figma](</images/Captura de tela 2025-03-31 200944-1.png>)
-![figma](</images/Captura de tela 2025-03-31 200755.png>)
-![figma](</images/Captura de tela 2025-03-31 200755-1.png>)
+Menu lateral aberto:
+![Menu Lateral](imgs/figma/menuLateral.png)
+
+Páginas acessíveis por meio do menu lateral:
+![Menu Lateral](imgs/figma/pagLateral.png)
+
+Planilha funcional:
+![Planilha Funcional](imgs/figma/planilha.png)
+
+Login:
+![Login](imgs/figma/login.png)
 
 ## Wireframes
-![CONTATO](/images/CONTATO.FIGMA.png)
-![ed.financeira](/images/EDUCAÇÃOFINANCEIRA.FIGMA.png)
-![Favoritos](/images/FAVORITOS.FIGMA.png) 
-![Home](/images/HOME.FIGMA.png) 
-![Investimentos](/images/INVESTIMENTOS.FIGMA.png)
-![Login](/images/LOGINUSÚARIO.FIGMA.png) 
-![Menu](/images/MENU.FIGMA.png)
-![Minha conta](/images/MINHACONTA.FIGMA.png)
-![News](/images/NOTÍCIAS.FIGMA.png) 
-![Pesquise aqui](/images/PESQUISEAQUI.FIGMA.png)
-![Planilha](/images/PLANILHA.FIGMA.png)
-![Tutoriais](/images/TUTORIAIS.FIGMA.png)
+Página Home do Site:
+![Home](/imgs/Wireframe/home.png)
+
+Menu aberto com as funcionalidades do usuário:
+![Menu Aberto](/imgs/Wireframe/menu.png)
+
+Aba de Investimentos:
+![Aba de Investimentos](imgs/Wireframe/investimentoHome.png)
+
+Aba de Notícias:
+![Aba de Notícias](imgs/Wireframe/noticiaHome.png)
+
+Aba de Educação Financeira:
+![Aba de Educação](imgs/Wireframe/educacaoHome.png)
+
+Login:
+![Login](imgs/Wireframe/login.png)
+
+Rodapé:
+![Rodapé](imgs/Wireframe/rodape.png)
+
+Minha Conta:
+![Minha Conta](imgs/Wireframe/conta.png)
+
+Pesquise aqui:
+![Pesquisa](imgs/Wireframe/pesquisa.png)
+
+Tutorial:
+![Tutorial](imgs/Wireframe/tutorial.png)
+
+Planilha:
+![Planilha](imgs/Wireframe/planilha.png)
+
+Planilha Aberta:
+![Planilha Aberta](imgs/Wireframe/planilhaAberta.png)
+
+Converse Conosco:
+![Converse Conosco](imgs/Wireframe/converse.png)
+
+Favoritos:
+![Favoritos](imgs/Wireframe/favoritos.png)
 
 
 ### Protótipo Interativo

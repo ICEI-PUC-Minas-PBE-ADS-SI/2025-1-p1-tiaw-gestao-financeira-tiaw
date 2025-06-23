@@ -5,13 +5,15 @@
 ## Histórias de usuários
 
 |    EU COMO... PERSONA   |      QUERO/PRECISO ... FUNCIONALIDADE      |               PARA ... MOTIVO/VALOR                 |
-|-------------------------|--------------------------------------------|-----------------------------------------------------|
+|----------------------------------------------------------------------------------------------------------------------------|
 |Eduardo (usuário comum)  | Ler conteúdos sobre finanças pessoais      | Aprender a cuidar melhor do meu dinheiro            |
 |Viciado em apostas       | Ajuda financeira                           | Parar de gastar dinheiro com vícios                 |
 |Microempreendedor        | Um controle financeiro                     | Otimizar os gastos do meu negócio                   |
 |Mãe                      | Ensinar meus filhos a lidar com dinheiro   | Que eles sejam adultos financeiramente responsáveis |
 |Jovem adulto endividado  | Aprender a lidar com dinheiro              | Estruturar minha vida financeira                    |
 |Pessoa bem-sucedida      | Estudar formas de investir meu patrimônio  | Ter uma fonte de renda futura                       |
+|----------------------------------------------------------------------------------------------------------------------------|
+
 
 ## Proposta de valor
 
@@ -49,7 +51,7 @@ O sistema busca oferecer:
 ### Requisitos funcionais
 
 | ID     |                        Descrição do Requisito                        | Prioridade |
-|--------|----------------------------------------------------------------------|------------|
+|--------------------------------------------------------------------------------------------|
 | RF-001 | O sistema deve conter conteúdo sobre como gerenciar dinheiro         |    Alta    |
 | RF-002 | O sistema deve exibir informações sobre investimentos                |    Alta    |
 | RF-003 | Ferramentas para distribuir a renda de forma inteligente             |    Alta    |
@@ -60,22 +62,28 @@ O sistema busca oferecer:
 | RF-008 | Realizar cálculo de gastos                                           |    Alta    |
 | RF-009 | Exibir tabela de gastos intuitiva                                    |    Alta    |
 | RF-010 | Permitir exportar planilhas em Excel e CSV                           |    Média   |
+|--------------------------------------------------------------------------------------------|
+
 
 ### Requisitos não funcionais
 
 | ID      |                       Descrição do Requisito                        | Prioridade |
-|---------|---------------------------------------------------------------------|------------|
+|--------------------------------------------------------------------------------------------|
 | RNF-001 | O sistema deve ser intuitivo e fácil de usar                        |    Alta    |
 | RNF-002 | Deve ser acessível em dispositivos móveis                           |    Alta    |
+|--------------------------------------------------------------------------------------------|
+
 
 ## Restrições
 
 | ID  |                              Restrição                                 |
-|-----|------------------------------------------------------------------------|
+|------------------------------------------------------------------------------|
 | 001 | O projeto deverá ser entregue até o final do semestre                  |
 | 002 | O sistema deverá ser apenas front-end, sem desenvolvimento de back-end |
 | 003 | Projeto com tempo de desenvolvimento curto                             |
 | 004 | Site sem fundos ou orçamento disponível                                |
+|------------------------------------------------------------------------------|
+
 
 ## Estrutura RACI — Insights da Pesquisa
 
