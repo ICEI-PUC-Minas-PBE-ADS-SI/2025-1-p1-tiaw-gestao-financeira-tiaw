@@ -1,21 +1,22 @@
+
 # Referências
-
-Inclua todas as referências (livros, artigos, sites, etc.) utilizadas no desenvolvimento do trabalho.
-
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
-
-⚠️ EXEMPLO ⚠️
 
 - BENYON, David. **Interação humano-computador**. 2. ed. São Paulo: Pearson Prentice Hall, 2011.
 
-- CORMEN, Thomas H et al. **Algoritmos:** teoria e prática. 4. ed. Rio de Janeiro: GEN LTC, 2024.
- 
-- ELMASRI, Ramez; NAVATHE, Sham. **Sistemas de banco de dados**. 7. ed. São Paulo: Pearson, c2019.
+- PRESSMAN, Roger S. **Engenharia de Software**: uma abordagem profissional. 8. ed. Porto Alegre: AMGH, 2016.
 
-- RUSSELL, Stuart J.; NORVIG, Peter. **Inteligência artificial:** uma abordagem moderna. 4. ed. Rio de Janeiro, RJ: LTC, 2022.
+- SOMMERVILLE, Ian. **Engenharia de Software**. 10. ed. São Paulo: Pearson, 2019.
 
-- SUTHERLAND, Jeffrey Victor; SUTHERLAND, J. J. **Scrum:** a arte de fazer o dobro do trabalho na metade do tempo. Rio de Janeiro, RJ: Sextante, 2019. 254 p.
+- W3SCHOOLS. **JSON Introduction**. Disponível em: https://www.w3schools.com/js/js_json_intro.asp. Acesso em: 23 jun. 2025.
 
-> **Links úteis**:
-> - [Padrão PUC Minas de normalização ABNT](http://portal.pucminas.br/biblioteca/documentos/GUIA-COMPLETO-ABNT-Elaborar-formatar-trabalho-cientificoNOVO.pdf)
-> - [Formato ABNT](https://www.normastecnicas.com/abnt/)
+- MOZILLA DEVELOPER NETWORK (MDN). **Trabalhando com JSON**. Disponível em: https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Objects/JSON. Acesso em: 23 jun. 2025.
+
+- CHART.JS. **Open source HTML5 Charts**. Disponível em: https://www.chartjs.org/. Acesso em: 23 jun. 2025.
+
+- FONT AWESOME. **Icon Library**. Disponível em: https://fontawesome.com/. Acesso em: 23 jun. 2025.
+
+- GITHUB – typicode. **JSON Server**. Disponível em: https://github.com/typicode/json-server. Acesso em: 23 jun. 2025.
+
+- ROCK CONTENT. **Screencast: entenda o que é e como gravar vídeos com ele**. Disponível em: https://rockcontent.com/br/blog/screencast/. Acesso em: 23 jun. 2025.
+
+- UX DESIGN. **Ferramentas de user testing**. Disponível em: https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7. Acesso em: 23 jun. 2025.

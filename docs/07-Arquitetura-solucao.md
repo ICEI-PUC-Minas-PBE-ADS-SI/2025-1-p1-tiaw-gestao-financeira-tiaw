@@ -1,109 +1,131 @@
-# Arquitetura da solução
 
-<span style="color:red">Pré-requisitos: <a href="05-Projeto-interface.md"> Projeto de interface</a></span>
+# Sistema de Gestão Financeira Educacional
 
-Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
+Este projeto é uma aplicação web desenvolvida para promover educação financeira por meio de conteúdos, metas, investimentos e notícias interativas.
 
-![Arquitetura da solução](images/exemplo-arquitetura.png)
+## 🧱 Arquitetura da Solução
 
-## Funcionalidades
+> **Pré-requisitos:** [Projeto de interface](05-Projeto-interface.md)
 
-Esta seção apresenta as funcionalidades da solução.
+A aplicação é estruturada como uma Single Page Application (SPA), com backend simulado via JSON Server. É composta por:
 
-##### Funcionalidade 1 - Cadastro de contatos ⚠️ EXEMPLO ⚠️
+- **Frontend (`public/`)**: páginas HTML/CSS/JS.
+- **Backend (`server.js` + `json-server`)**: simulação de API REST.
+- **Banco de dados (`db/db.json`)**: fonte de dados local em JSON.
 
-Permite a inclusão, leitura, alteração e exclusão de contatos para o sistema
+Com `npm start`, o servidor:
+- Roda em `http://localhost:3000`
+- Expõe endpoints REST a partir de `db.json`
+- Serve páginas estáticas da pasta pública
 
-* **Estrutura de dados:** [Contatos](#estrutura-de-dados---contatos)
-* **Instruções de acesso:**
-  * Abra o site e efetue o login;
-  * Acesse o menu principal e escolha a opção "Cadastros";
-  * Em seguida, escolha a opção "Contatos".
-* **Tela da funcionalidade**:
+---
 
-![Tela de funcionalidade](images/exemplo-funcionalidade.png)
+## ✨ Funcionalidades
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente cada uma das funcionalidades que a aplicação fornece tanto para os usuários, quanto aos administradores da solução.
->
-> Inclua, para cada funcionalidade, itens como: (1) títulos e descrição da funcionalidade; (2) estrutura de dados associada; (3) o detalhe sobre as instruções de acesso e uso.
+### Funcionalidade 1 – Conteúdos de Educação Financeira
 
-### Estruturas de dados
+- Exibe artigos informativos sobre economia, inflação, organização financeira etc.
+- Acesso pelas páginas `paginaEducacao.html` e `detalhesEducacao.html`
 
-Descrição das estruturas de dados utilizadas na solução com exemplos no formato JSON.Info.
+### Funcionalidade 2 – Notícias
 
-##### Estrutura de dados - Contatos
+- Exibe cards com notícias atuais e botão para detalhes via pop-up
+- Página: `notícias.html`
 
-Contatos da aplicação
+### Funcionalidade 3 – Metas Financeiras
 
-```json
-  {
-    "id": 1,
-    "nome": "Leanne Graham",
-    "cidade": "Belo Horizonte",
-    "categoria": "amigos",
-    "email": "Sincere@april.biz",
-    "telefone": "1-770-736-8031",
-    "website": "hildegard.org"
-  }
-  
-```
+- Permite acompanhar o progresso de metas econômicas
+- Página: `metas.html`
 
-##### Estrutura de dados - Usuários  ⚠️ EXEMPLO ⚠️
+### Funcionalidade 4 – Investimentos
 
-Registro dos usuários do sistema utilizados para login e para o perfil do sistema.
+- Apresenta tipos de investimentos e detalhamento
+- Páginas: `investimentos.html`, `detalhesinvestimentos.html`
+
+---
+
+## 🗂️ Estruturas de Dados
+
+### `educacao`
 
 ```json
-  {
-    id: "eed55b91-45be-4f2c-81bc-7686135503f9",
-    email: "admin@abc.com",
-    id: "eed55b91-45be-4f2c-81bc-7686135503f9",
-    login: "admin",
-    nome: "Administrador do Sistema",
-    senha: "123"
-  }
+{
+  "id": "1",
+  "titulo": "Como o dólar alto afeta o bolso dos brasileiros",
+  "resumo": "Apesar dos recentes recuos...",
+  "texto": "<p>Texto completo em HTML</p>"
+}
 ```
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente as estruturas de dados utilizadas na solução tanto para dados utilizados na essência da aplicação, quanto outras estruturas que foram criadas para algum tipo de configuração.
->
-> Nomeie a estrutura, coloque uma descrição sucinta e apresente um exemplo em formato JSON.
->
-> **Orientações:**
->
-> * [JSON Introduction](https://www.w3schools.com/js/js_json_intro.asp)
-> * [Trabalhando com JSON - Aprendendo desenvolvimento web | MDN](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Objects/JSON)
+### `noticias`
 
-### Módulos e APIs
+```json
+{
+  "id": 2,
+  "titulo": "Novo programa educacional é lançado",
+  "resumo": "Capacitação de professores em tecnologia...",
+  "imagem": "programa-educacional.png",
+  "texto": "Conteúdo completo da notícia"
+}
+```
 
-Esta seção apresenta os módulos e APIs utilizados na solução.
+### `metas`
 
-**Images**:
+```json
+{
+  "id": 3,
+  "titulo": "Economizar R$ 5.000 até dezembro",
+  "descricao": "Meta de economia mensal",
+  "valorAtual": 1800,
+  "valorMeta": 5000
+}
+```
 
-* Unsplash - [https://unsplash.com/](https://unsplash.com/) ⚠️ EXEMPLO ⚠️
+### `investimentos`
 
-**Fonts:**
+```json
+{
+  "id": 4,
+  "titulo": "Tesouro Direto",
+  "descricao": "Investimento de renda fixa...",
+  "imagem": "tesouro.jpg",
+  "texto": "Texto explicando o investimento"
+}
+```
 
-* Icons Font Face - [https://fontawesome.com/](https://fontawesome.com/) ⚠️ EXEMPLO ⚠️
+---
 
-**Scripts:**
+## 📦 Módulos e APIs
 
-* jQuery - [http://www.jquery.com/](http://www.jquery.com/) ⚠️ EXEMPLO ⚠️
-* Bootstrap 4 - [http://getbootstrap.com/](http://getbootstrap.com/) ⚠️ EXEMPLO ⚠️
+### Bibliotecas e Ferramentas
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente os módulos e APIs utilizados no desenvolvimento da solução. Inclua itens como: (1) frameworks, bibliotecas, módulos, etc. utilizados no desenvolvimento da solução; (2) APIs utilizadas para acesso a dados, serviços, etc.
+- **Express**
+- **JSON Server**
+- **CORS**
+- **Bootstrap / Font Awesome**
+- **Chart.js**
+- **jQuery**
 
+---
 
-## Hospedagem
+## ☁️ Hospedagem
 
-Explique como a hospedagem e o lançamento da plataforma foram realizados.
+### Passos para rodar localmente:
 
-> **Links úteis**:
-> - [Website com GitHub Pages](https://pages.github.com/)
-> - [Programação colaborativa com Repl.it](https://repl.it/)
-> - [Getting started with Heroku](https://devcenter.heroku.com/start)
-> - [Publicando seu site no Heroku](http://pythonclub.com.br/publicando-seu-hello-world-no-heroku.html)
+```bash
+npm install
+npm start
+```
+
+Isso executa:
+
+```bash
+json-server --watch ./db/db.json --port 3000 --static ./public
+```
+
+### Acesse pelo navegador:
+```
+http://localhost:3000/homepage.html
+```
+
+---

@@ -1,42 +1,57 @@
-# Plano de testes de software
 
-<span style="color:red">Pré-requisitos: <a href="03-Product-design.md"> Especificação do projeto</a></span>, <a href="05-Projeto-interface.md"> Projeto de interface</a>
+# Plano de Testes de Software
 
-O plano de testes de software é gerado a partir da especificação do sistema e consiste em casos de teste que deverão ser executados quando a implementação estiver parcial ou totalmente pronta. Apresente os cenários de teste utilizados na realização dos testes da sua aplicação. Escolha cenários de teste que demonstrem os requisitos sendo satisfeitos.
+> **Pré-requisitos:** [Especificação do projeto](03-Product-design.md), [Projeto de interface](05-Projeto-interface.md)
 
-Enumere quais cenários de testes foram selecionados para teste. Neste tópico, o grupo deve detalhar quais funcionalidades foram avaliadas, o grupo de usuários que foi escolhido para participar do teste e as ferramentas utilizadas.
+Este plano de testes contempla os principais cenários de uso do sistema, conforme as funcionalidades implementadas. Os testes foram realizados por membros do grupo, considerando as ações do usuário final.
 
-Não deixe de enumerar os casos de teste de forma sequencial e garantir que o(s) requisito(s) associado(s) a cada um deles esteja(m) correto(s) — de acordo com o que foi definido na <a href="03-Product-design.md">Especificação do projeto</a>.
+---
 
-Por exemplo:
+## ✅ Casos de Teste
 
-| **Caso de teste**  | **CT-001 – Cadastrar perfil**  |
-|:---: |:---: |
-| Requisito associado | RF-00X - A aplicação deve apresentar, na página principal, a funcionalidade de cadastro de usuários para que estes consigam criar e gerenciar seu perfil. |
-| Objetivo do teste | Verificar se o usuário consegue se cadastrar na aplicação. |
-| Passos | - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html <br> - Clicar em "Criar conta" <br> - Preencher os campos obrigatórios (e-mail, nome, sobrenome, celular, CPF, senha, confirmação de senha) <br> - Aceitar os termos de uso <br> - Clicar em "Registrar" |
-| Critério de êxito | - O cadastro foi realizado com sucesso. |
-| Responsável pela elaboração do caso de teste | Nome do integrante da equipe. |
+| **Caso de teste**  | **CT-001 – Visualizar conteúdos de educação financeira** |
+|--------------------|------------------------------------------------------------|
+| Requisito associado | RF-001 – A aplicação deve apresentar conteúdos educativos sobre finanças. |
+| Objetivo do teste | Verificar se os conteúdos são carregados corretamente e exibidos ao usuário. |
+| Passos | - Acessar o navegador<br>- Ir para `paginaEducacao.html`<br>- Conferir o carregamento dos cards com título e imagem<br>- Clicar em um card para abrir a página de detalhes |
+| Critério de êxito | O conteúdo completo é exibido corretamente e sem erros. |
+| Responsável pela elaboração do caso de teste | João Vitor Vieira Guedes |
 
-<br>
+---
 
-| **Caso de teste**  | **CT-002 – Efetuar login**  |
-|:---: |:---: |
-| Requisito associado | RF-00Y - A aplicação deve possuir opção de fazer login, sendo o login o endereço de e-mail. |
-| Objetivo do teste | Verificar se o usuário consegue realizar login. |
-| Passos | - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html <br> - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo de senha <br> - Clicar em "Login" |
-| Critério de êxito | - O login foi realizado com sucesso. |
-| Responsável pela elaboração do caso de teste | Nome do integrante da equipe. |
+| **Caso de teste**  | **CT-002 – Exibir detalhes de notícias** |
+|--------------------|------------------------------------------|
+| Requisito associado | RF-002 – A aplicação deve permitir ao usuário visualizar detalhes de uma notícia. |
+| Objetivo do teste | Verificar se os dados completos da notícia são exibidos corretamente no pop-up/modal. |
+| Passos | - Acessar `notícias.html`<br>- Verificar se os cards de notícias aparecem<br>- Clicar em uma notícia<br>- Verificar se o pop-up abre com título, imagem e texto |
+| Critério de êxito | O conteúdo completo da notícia é exibido e o botão de fechar funciona. |
+| Responsável pela elaboração do caso de teste | João Vitor Vieira Guedes |
 
+---
 
-## Ferramentas de testes (opcional)
+| **Caso de teste**  | **CT-003 – Cadastrar metas financeiras** |
+|--------------------|------------------------------------------|
+| Requisito associado | RF-003 – A aplicação deve permitir o registro de metas financeiras. |
+| Objetivo do teste | Validar se o formulário de metas registra e armazena os dados corretamente. |
+| Passos | - Acessar `metas.html`<br>- Inserir título, descrição e valor da meta<br>- Clicar em “Salvar”<br>- Verificar se a nova meta aparece na lista |
+| Critério de êxito | A meta é registrada no `db.json` e exibida corretamente. |
+| Responsável pela elaboração do caso de teste | João Vitor Vieira Guedes |
 
-Comente sobre as ferramentas de testes utilizadas.
- 
-> **Links úteis**:
-> - [IBM - criação e geração de planos de teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Práticas e técnicas de testes ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
-> - [Teste de software: conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-> - [Criação e geração de planos de teste de software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Ferramentas de teste para JavaScript](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
+---
+
+| **Caso de teste**  | **CT-004 – Navegar entre páginas** |
+|--------------------|------------------------------------|
+| Requisito associado | RF-004 – A aplicação deve permitir navegação funcional entre as seções do site. |
+| Objetivo do teste | Validar se os botões/links do menu funcionam corretamente. |
+| Passos | - Acessar `homepage.html`<br>- Clicar nos links do menu lateral e do header<br>- Verificar se as páginas são carregadas sem erros |
+| Critério de êxito | Todas as páginas são acessadas normalmente. |
+| Responsável pela elaboração do caso de teste | João Vitor Vieira Guedes |
+
+---
+
+## 🛠️ Ferramentas de Teste
+
+- Testes manuais realizados no navegador (Google Chrome e Firefox)
+- Validação de JSON via [jsonlint.com](https://jsonlint.com/)
+- Inspeção de elementos com DevTools
+- Testes de abertura e navegação realizados com usuários do grupo
