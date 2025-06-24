@@ -82,7 +82,7 @@
       "titulo": "Como fazer testamento? Saiba como criar um do zero",
       "resumo": "Documento é a forma mais famosa de planejamento sucessório, mas é preciso saber fazê-lo para que tenha validade no futuro",
       "texto": "<h1>O que é um testamento?</h1><p>Um testamento nada mais é do que uma declaração de vontade da pessoa que o faz (também chamada de \"testador\") sobre o que ela gostaria que acontecesse após a sua morte.</p><br><p>Como vimos, ele pode conter aspectos que vão além do patrimônio, desde que não extrapole o que a lei determina. Um exemplo foi o caso da apresentadora Glória Maria, que deixou expresso no testamento quem seriam os tutores legais de suas duas filhas, que tinham 14 e 15 anos quando ela faleceu, em fevereiro de 2023.</p><br><p>Outro caso conhecido e que não foi corretamente divulgado, segundo Viviane, foi de Nélida Pigñón, falecida em dezembro de 2022. Na ocasião, alguns veículos informaram que a escritora havia deixado um apartamento como herança para suas duas cachorrinhas.</p><br><p>\"A informação não foi divulgada corretamente, pois animal não pode receber patrimônio. Na verdade, ela deixou uma pessoa como tutora dos cachorros, que ficou responsável pela casa e pelos cuidados com os animais\", explica a advogada.</p><br><p>Viviane também observa que a tutoria (seja de pessoas ou animais) também pode ser expressa em outro tipo de documento, como uma carta de próprio punho, por exemplo. Porém, o testamento sempre tem mais força, principalmente se ele é do tipo público, conforme veremos mais adiante.</p>",
-      "favoritado": false,
+      "favoritado": true,
       "autor": "InfoMoney",
       "data": "7/05/2024",
       "categoria": "educacao",
@@ -108,47 +108,53 @@
       "imagem": "img/img-noticia/Pib.png",
       "resumo": "PIB sobe 2,5% puxado por serviços.",
       "conteudo": "O PIB brasileiro teve um crescimento de 2,5% no primeiro trimestre, impulsionado pelo setor de serviços...",
-      "id": 1
+      "id": "1",
+      "favoritado": false
     },
     {
       "titulo": "Novo programa educacional é lançado",
       "imagem": "img/img-noticia/programa-educacional.png",
       "resumo": "Programa para capacitar professores em tecnologia.",
       "conteudo": "O governo lançou um programa para capacitação de professores em tecnologia e inovação...",
-      "id": 2
+      "id": "2",
+      "favoritado": true
     },
     {
       "titulo": "Investimentos em startups batem recorde",
-      "imagem": "img/img-noticia/noticia.png",
+      "imagem": "/img/img-noticia/startup.jpeg",
       "resumo": "Startups recebem R$ 1,2 bi em abril.",
       "conteudo": "Startups brasileiras receberam R$ 1,2 bilhão em investimentos no mês de abril, maior valor desde 2022...",
-      "id": 3
+      "id": "3",
+      "favoritado": false
     },
     {
       "titulo": "Campanha de vacinação atinge 90% do público-alvo",
-      "imagem": "img/img-noticia/noticia.png",
+      "imagem": "/img/img-noticia/vacina.jpg",
       "resumo": "Vacinação contra gripe supera expectativas.",
       "conteudo": "A campanha nacional de vacinação contra a gripe alcançou 90% da meta em menos de um mês...",
-      "id": 4
+      "id": "4",
+      "favoritado": false
     },
     {
       "titulo": "Feira de Ciências movimenta escolas públicas",
-      "imagem": "img/img-noticia/noticia.png",
+      "imagem": "/img/img-noticia/ciencia.jpeg",
       "resumo": "Estudantes apresentam projetos inovadores.",
       "conteudo": "Alunos do ensino médio apresentaram projetos científicos inovadores em evento regional...",
-      "id": 5
+      "id": "5",
+      "favoritado": true
     },
     {
       "titulo": "Mercado financeiro reage a mudanças fiscais",
-      "imagem": "img/img-noticia/noticia.png",
+      "imagem": "/img/img-noticia/mercado.jpg",
       "resumo": "Volatilidade nos mercados, mas há otimismo.",
       "conteudo": "As recentes mudanças na política fiscal causaram volatilidade no mercado, mas especialistas veem melhora no médio prazo...",
-      "id": 6
+      "id": "6",
+      "favoritado": false
     }
   ],
   "investimento": [
     {
-      "id": 1,
+      "id": "1",
       "titulo": "Bitcoin",
       "imagem": "img/imgs-bernardo/bitcoin.jpg",
       "resumo": "A criptomoeda mais conhecida do mundo, volátil e descentralizada.",
@@ -162,14 +168,14 @@
       ]
     },
     {
-      "id": 2,
+      "id": "2",
       "titulo": "Bolsa de Valores",
       "imagem": "img/imgs-bernardo/bolsa.jpg",
       "resumo": "Investimento em ações de empresas. Alta rentabilidade com riscos.",
       "conteudo": "A bolsa de valores é o ambiente onde se negociam ações de empresas de capital aberto, títulos de dívida e outros ativos financeiros. Investir em ações significa tornar-se sócio de empresas, participando de seus lucros (via dividendos) e crescimento (via valorização das ações).Esse tipo de investimento é excelente para quem pensa no longo prazo, já que a oscilação diária do mercado pode assustar os iniciantes. Porém, com estudo, disciplina e diversificação, a bolsa oferece grandes oportunidades de construção de patrimônio. É uma ferramenta essencial para quem busca independência financeira."
     },
     {
-      "id": 3,
+      "id": "3",
       "titulo": "Ouro",
       "imagem": "img/imgs-bernardo/ouro3.jpg",
       "resumo": "Ativo físico considerado proteção em tempos de crise econômica.",
