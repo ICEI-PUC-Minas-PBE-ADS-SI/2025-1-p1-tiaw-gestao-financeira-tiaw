@@ -191,42 +191,40 @@ function lerImagemComoBase64(file) {
   });
 }
 
-/* Favorito do Coração */
-function favorito(element, id) {
-  fetch(`http://localhost:3000/educacao/${id}`)
-    .then(res => res.json())
-    .then(data => {
-      favoritos = data;
-      let confereFavorito;
-      if (element.src.includes("coracao-png")) {
-        confereFavorito = true;
-        element.src = "/img/img-educacao/coracao-vermelho.png";
-      }
-      else {
-        element.src = "/img/img-educacao/coracao-png.png";
-        confereFavorito = false;
-      }
-      data.favoritado = confereFavorito;
+function mostrarNoticias() {
+  let noticiasEducativas = document.getElementById("noticiaEducativa");
+  let inicio = 0;
+  let strNoticia = "";
+  const fim = paginaAtual * porPagina;
+  for (let i = inicio; i < fim && i < noticias.length; i++) {
+    const noticia = noticias[i];
+    strNoticia += `
+      <div class="noticia text-center">
+        <a href="detalhesEducacao.html?id=${noticia.id}">
+        <div class="imagemNoticia text-center">
+            <img src="${noticia.banner}" class="imagem" alt="${noticia.descricao || noticia.titulo}">
+        </div>
+        <div class="texto">
+            <h1>${noticia.titulo}</h1></a>
+          <p class="resumo">${noticia.resumo}</p>
+          <p class="autor">${noticia.autor}</p>
+          <p class="data">${noticia.data}</p>
+<i class="fas fa-heart favorite-icon ${noticia.favoritado ? 'favorito' : ''}" onclick="favorito(this, '${noticia.id}')" data-id="${noticia.id}"></i>
 
-      return fetch(`http://localhost:3000/educacao/${id}`, {
-        method: "PATCH",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(data)
-      })
-    })
-
-    .then(response => {
-      if (!response.ok) {
-        throw new Error("Erro ao atualizar favorito");
-      }
-    })
-    .catch(error => {
-      console.error("Erro ao favoritar:", error);
-      alert("Não foi possível atualizar o favorito.");
-    });
+          <i class="fas fa-heart favorite-icon ${noticia.favoritado ? 'favorito' : ''}" onclick="favorito(this, '${noticia.id}')" data-id="${noticia.id}"></i>
+        </div>
+      </div >
+    `;
+  }
+  noticiasEducativas.innerHTML = strNoticia;
+  const botao = document.querySelector(".vejaMais");
+  if (fim >= noticias.length) {
+    botao.style.display = "none";
+  } else {
+    botao.style.display = "block";
+  }
 }
+
 
 /* Função para enviar comentário pelo botão Enviar */
 function EnviarComentario() {

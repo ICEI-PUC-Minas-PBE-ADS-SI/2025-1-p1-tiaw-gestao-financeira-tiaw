@@ -5,7 +5,7 @@
       "titulo": "Como o dólar alto afeta o bolso dos brasileiros",
       "resumo": "Apesar dos recentes recuos, moeda norte-americana ainda acumula valorização de 12,6% contra o real em 2024",
       "texto": "<p>Apesar do forte recuo do dólar nos últimos dias, fechando a semana cotado a R$ 5,46, a divisa ainda se mantém no maior patamar desde 2022 — resultado de uma escalada iniciada em abril e que se intensificou em junho.<br> Em 2024 a moeda ainda acumula elevação de 12,6%.<br>Desde viagens ao exterior até o encarecimento de produtos nas gôndolas dos supermercados, o dólar alto deve afetar a economia e o bolso dos brasileiros a curto e médio prazo, segundo economistas ouvidos pela CNN.<br>Confira abaixo como a perda de valor do real ante a principal moeda do globo tende a impactar o cotidiano no Brasil.</p><h1>Viagens mais caras</h1><p>Um dos principais sinais perceptíveis da alta do dólar está no encarecimento das viagens ao exterior.<br>Neste caso, o efeito mais palpável está na perda de valor da moeda brasileira — o que demanda mais reais para compra de produtos ou contratação de serviços cotados em dólar.<br>Em outro aspecto, o custo das passagens também se torna menos acessível, já que grande parte das despesas das companhias aéreas está atrelada à moeda norte-americana.<br>\"De forma imediata, vejo efeito que se a pessoa está com viagem marcada ou com algum compromisso de compra de imóvel fora do país, por exemplo, onde se precisa desembolsar o valor em dólar\", explica a economista-chefe do Ouribank, Cristiane Quartaroli.</p><h1>Produtos mais caros no Brasil</h1><p>O encarecimento dos produtos nas lojas e supermercados no Brasil é outro efeito relacionado ao aumento da cotação do câmbio.<br> Por um lado, a importação de bens se torna mais cara diante da disparidade do valor entre o real e a divisa norte-americana. Esse efeito acaba se espalhando por toda a cadeia, visto que mesmo itens produzidos no Brasil usam componentes, insumos ou maquinários estrangeiros.<br>\"Mesmo nos grãos, que o Brasil tem certo protagonismo, as cotações também são estabelecidas em dólar, então soja e milho podem ficar mais caros\", explica André Braz, pesquisador do Instituto Brasileiro de Economia da Fundação Getulio Vargas (Ibre/FGV).<br>O aumento do dólar também torna o mercado internacional mais atraente, fazendo com que produtores brasileiros priorizem as exportações ao consumo interno. Com menos oferta disponível, o preço do produto tende a apontar para cima.<br>\"Sempre que o real se desvaloriza frente ao dólar, é como se os produtos brasileiros entrassem em promoção e isso pode estimular um volume maior de exportações\", complementa Braz</p>",
-      "favoritado": false,
+      "favoritado": true,
       "autor": "Isabella Marzolla",
       "data": "07/07/2024",
       "categoria": "educacao",
@@ -117,7 +117,7 @@
       "resumo": "Programa para capacitar professores em tecnologia.",
       "conteudo": "O governo lançou um programa para capacitação de professores em tecnologia e inovação...",
       "id": "2",
-      "favoritado": true
+      "favoritado": false
     },
     {
       "titulo": "Investimentos em startups batem recorde",
@@ -141,7 +141,7 @@
       "resumo": "Estudantes apresentam projetos inovadores.",
       "conteudo": "Alunos do ensino médio apresentaram projetos científicos inovadores em evento regional...",
       "id": "5",
-      "favoritado": true
+      "favoritado": false
     },
     {
       "titulo": "Mercado financeiro reage a mudanças fiscais",
