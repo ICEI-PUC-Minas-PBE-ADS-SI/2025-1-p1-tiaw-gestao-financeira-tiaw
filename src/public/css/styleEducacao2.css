@@ -8,7 +8,7 @@ body {
 
 /* Header Inicio */
 .navbar {
-    background-color: #e7f5e9;
+    background-color: #0a1a37;
     width: 100%;
     padding: 10px 15px;
     border-bottom: 8px solid #42e619;
@@ -36,7 +36,7 @@ body {
 .pages li a {
     display: block;
     text-decoration: none;
-    color: black;
+    color: #e7f5e9;
     font-weight: bold;
     font-size: 1.8rem;
     padding: 10px 10px;
@@ -58,7 +58,7 @@ body {
 /* Ícone de menu (hambúrguer) */
 .fas.fa-bars {
     font-size: 2.3rem;
-    color: black;
+    color: #e7f5e9;
     cursor: pointer;
     display: block;
     margin-right: 10px;
