@@ -1,6 +1,5 @@
  /* Body */
  body {
-     background-color: #e7f5e9;
      margin: 0;
      padding: 0;
  }
@@ -11,7 +10,7 @@
 
  /* Header */
  .navbar {
-     background-color: #e7f5e9;
+     background-color: #0a1a37;
      width: 100%;
      padding: 10px 15px;
      border-bottom: 8px solid #42e619;
@@ -38,7 +37,7 @@
  .pages li a {
      display: block;
      text-decoration: none;
-     color: black;
+     color: #e7f5e9;
      font-weight: bold;
      font-size: 1.8rem;
      padding: 10px 10px;
@@ -47,6 +46,7 @@
 
  .pages li a:hover {
      background-color: #42e619;
+     color: #0a1a37;
      border-radius: 5px;
  }
 
@@ -60,12 +60,16 @@
  /* Ícone de menu (hambúrguer) */
  .fas.fa-bars {
      font-size: 2.3rem;
-     color: black;
+     color: #e7f5e9;
      cursor: pointer;
      display: block;
      margin-right: 10px;
      font-size: 30px;
      height: 25px;
+ }
+
+ .fas.fa-bars:hover {
+     color: #42e619;
  }
 
  /*Dropdown do Menu*/
@@ -181,25 +185,30 @@
  }
 
  .cardEducacao {
-     border-top: 3px solid #42e619;
-     border-bottom: 3px solid #42e619;
-
+     border-top: 3px solid #0a1a37;
+     border-bottom: 3px solid #0a1a37;
+     background-color: #e7f5e9;
  }
 
  .cardEducacao p {
      font-family: 'Times New Roman', Times, serif;
-     font-size: 20px
+     font-size: 20px;
+
+ }
+
+ .textoParagrafo {
+     background-color: #e7f5e9;
  }
 
  .cardTitulo {
      font-size: 25px;
      font-weight: 600;
      font-family: 'Times New Roman', Times, serif;
+     color: #0a1a37;
+    }
+    
+    .cardTitulo:hover {
      color: #034C1C;
- }
-
- .cardTitulo:hover {
-     color: #42e619;
  }
 
  .imagemCardNoticia {
@@ -227,13 +236,13 @@
  h1 {
      text-align: center;
      font-size: 40px;
-     color: #034C1C;
+     color: #0a1a37;
  }
 
  /* Texto Fim */
  /* Footer */
  .rodape {
-     background-color: #e7f5e9;
+     background-color: #0a1a37;
      margin-top: 40px;
      border-top: 8px solid #42e619;
      padding: 20px;
@@ -259,7 +268,7 @@
  .containerborder p {
      font-size: 1.1em;
      margin-bottom: 15px;
-     color: #333;
+     color: #e7f5e9;
  }
 
  .redes-sociais {
@@ -270,7 +279,7 @@
  }
 
  .redes-sociais a {
-     color: #333;
+     color: #e7f5e9;
      font-size: 1.5em;
      display: flex;
      align-items: center;

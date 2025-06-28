@@ -1,7 +1,6 @@
 /* Body */
 html,
 body {
-    background-color: #e7f5e9;
     margin: 0;
     margin-bottom: 20px;
     padding: 0;
@@ -9,7 +8,7 @@ body {
 
 /* Header */
 .navbar {
-    background-color: #e7f5e9;
+    background-color: #0a1a37;
     width: 100%;
     padding: 10px 15px;
     border-bottom: 8px solid #42e619;
@@ -36,7 +35,7 @@ body {
 .pages li a {
     display: block;
     text-decoration: none;
-    color: black;
+    color: #e7f5e9;
     font-weight: bold;
     font-size: 1.8rem;
     padding: 10px 10px;
@@ -45,6 +44,7 @@ body {
 
 .pages li a:hover {
     background-color: #42e619;
+    color: #0a1a37;
     border-radius: 5px;
 }
 
@@ -58,12 +58,16 @@ body {
 /* Ícone de menu (hambúrguer) */
 .fas.fa-bars {
     font-size: 2.3rem;
-    color: black;
+    color: #e7f5e9;
     cursor: pointer;
     display: block;
     margin-right: 10px;
     font-size: 30px;
     height: 25px;
+}
+
+.fas.fa-bars:hover {
+    color: #42e619;
 }
 
 /*Dropdown do Menu*/
@@ -154,25 +158,6 @@ body {
     border-radius: 5px;
 }
 
-@media (max-width: 768px) {
-    .pages {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background-color: #e7f5e9;
-        flex-direction: column;
-        text-align: center;
-        padding: 20px 0;
-        width: 100%;
-        z-index: 999;
-    }
-
-    .pages.show {
-        display: flex;
-    }
-}
-
 /* Fim - Header */
 
 /* Main */
@@ -199,12 +184,16 @@ main {
     padding: 10px;
     display: flex;
     gap: 20px;
-    border-top: #42e619 solid 4px;
-    border-bottom: #42e619 solid 4px;
+    border-top: #0a1a37 solid 4px;
+    border-bottom: #0a1a37 solid 4px;
     border-radius: 8px;
     vertical-align: center;
     width: 100%;
     background-color: #fff;
+}
+
+.noticia h1:hover {
+    color: #034c1c;
 }
 
 #comentariosCampos {
@@ -220,15 +209,15 @@ main {
 
 .vejaMais a {
     text-decoration: none;
-    color: #034c1c;
+    color: #fff;
 }
 
 .vejaMais {
     width: 200px;
     height: 75px;
-    border: solid 4px #42e619;
+    border: solid 4px #fff;
     border-radius: 5px;
-    background-color: #fff;
+    background-color: #0a1a37;
     font-size: 25px;
     font-weight: 500;
     margin: 40px auto;
@@ -236,8 +225,8 @@ main {
 }
 
 .vejaMais:hover {
-    background-color: #42e619;
-    color: #ffffff;
+    background-color: #034c1c;
+    color: #000;
 }
 
 .vejaMais a:hover {
@@ -341,7 +330,7 @@ main {
 h1 {
     text-align: center;
     font-size: 40px;
-    color: #034C1C;
+    color: #0a1a37;
 }
 
 h2 {
@@ -399,7 +388,7 @@ p {
 .insiraComentario {
     height: 100px;
     margin: 0 40px;
-    border: solid 3px #42e619;
+    border: solid 3px #0a1a37;
     border-radius: 5px;
     color: #7e807f;
     font-size: 20px;
@@ -416,14 +405,14 @@ p {
 
 .btnEnviar {
     justify-content: flex-end;
-    color: #021d0b;
+    color: #fff;
     font-weight: 700;
     height: 50px;
     width: 100px;
     text-align: center;
-    background-color: #fff;
+    background-color: #0a1a37;
     border-radius: 10px;
-    border: solid 4px #42e619;
+    border: solid 4px #e7f5e9;
     font-size: 20px;
 
 }
@@ -449,7 +438,7 @@ p {
 .comentarioUsuario {
     height: 100px;
     margin: 0 20px;
-    border: solid 3px #42e619;
+    border: solid 3px #0a1a37;
     border-radius: 5px;
     width: 80%;
     padding-left: 20px;
@@ -461,7 +450,7 @@ p {
 /* Fim Texto */
 /* Footer Inicio */
 .rodape {
-    background-color: #e7f5e9;
+    background-color: #0a1a37;
     margin-top: 40px;
     border-top: 8px solid #42e619;
     padding: 20px;
@@ -487,7 +476,7 @@ p {
 .containerborder p {
     font-size: 1.1em;
     margin-bottom: 15px;
-    color: #333;
+    color: #e7f5e9;
 }
 
 .redes-sociais {
@@ -498,7 +487,7 @@ p {
 }
 
 .redes-sociais a {
-    color: #333;
+    color: #e7f5e9;
     font-size: 1.5em;
     display: flex;
     align-items: center;
@@ -602,14 +591,4 @@ p {
         height: 250px;
     }
 
-}
-.favorite-icon {
-  color: gray;
-  cursor: pointer;
-  font-size: 20px;
-  transition: color 0.3s;
-}
-
-.favorite-icon.favorito {
-  color: red;
 }

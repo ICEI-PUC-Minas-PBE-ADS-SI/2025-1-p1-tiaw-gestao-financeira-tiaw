@@ -47,8 +47,10 @@ A primeira divisão que fizemos construíram a estrutura e artefatos principais 
 Na segunda divisão dividimos as features que são complementais e não essenciais para o site.
 ![Sprint 2](/imgs/Metodologia/planejamento-Sprint-2.png)
 
-<!-- Colocar um print do kanban e link dele -->
-Coloque uma imagem da estrutura da ferramenta de controle de tarefas (Kanban) e o link do GitHub Projects.
+Kanban:
+https://github.com/orgs/ICEI-PUC-Minas-PBE-ADS-SI/projects/67
+![Sprint 2](/imgs/Metodologia/kanban.png)
+
 
 
 ### Ferramentas

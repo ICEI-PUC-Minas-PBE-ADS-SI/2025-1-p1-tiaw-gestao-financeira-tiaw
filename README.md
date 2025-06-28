@@ -10,7 +10,6 @@ O projeto do grupo tem como objetivo oferecer suporte a pessoas em diferentes si
 
 ## Integrantes
 
-* Arthur Soares Gandra
 * Bernardo Maia Lomas Ameno
 * Daniel Meireles Aquino Jorge
 * Danton Rodrigues Diniz
@@ -27,8 +26,13 @@ O projeto do grupo tem como objetivo oferecer suporte a pessoas em diferentes si
 Não são necessárias ferramentas adicionas para utilização, apenas iniciar o servidor com npm start.
 
 O usuário admin para teste é:
-<!-- Colocar aqui o usuário e senha admins para teste -->
+login: admin
+senha: admin123
 
+
+# Hospedagem do site
+<!-- Colocar aqui o link do site -->
+Link de acesso para o site hospedado:
 
 
 # Documentação
@@ -51,15 +55,9 @@ O usuário admin para teste é:
 * <a href="/src/public/homepage.html">Código</a>
 
 # Apresentação
-<!-- Fazer o link aqui da apresentação do projeto -->
+<!-- Colocar o pdf da apresentação nessa ref -->
 * <a href="/presentation/README.md">Apresentação do projeto</a>
 
-## Dicas 
 
-> **IMPORTANTE: APAGUE ESTA SEÇÃO DE DICAS ANTES DE ENTREGAR SEU TRABALHO**
-
-No desenvolvimento deste trabalho, o grupo deverá utilizar este repositório como local para entrega de todos os artefatos a serem produzidos. Em especial, o grupo deverá providenciar a alteração dos seguintes arquivos:
-
-* **Arquivo CITATION.cff**: utilizado para referenciar o projeto; <!-- Ok -->
-* **Pasta docs**: documentação completa do projeto;<!-- Falta o kanban em metodologia e links em Registro de software -->
-* **Pasta presentation**: apresentação do projeto; <!-- Adicionar o vídeo e slides -->
+* **Pasta docs**: documentação completa do projeto;<!-- links em Registro de software -->
+* **Pasta presentation**: apresentação do projeto; <!-- Adicionar o vídeo em mp4 e slides em pdf -->
