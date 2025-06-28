@@ -1,78 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <script src="./assets/js/login.js"></script>
-  </head>
-  <body>
-    <header>
-      <div class="banner">
-        <img src="./assets/images/banner_ti.png" alt="" />
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Minhas Metas Financeiras</title>
+  <link rel="stylesheet" href="css/metas.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+    <!--Navbar-->
+  <header>
+    <div class="navbar" id="navbar">
+      <div class="logo">
+        <a href="homepage.html">
+          <img src="img/imgs-bernardo/logomelhorada.png" alt="logo" id="logo">
+        </a>
       </div>
-      <div class="barra-info">
-        <nav class="menu">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">Sobre nós</a></li>
-          </ul>
-        </nav>
-        <div class="dados-usuario">
-          <span id="userInfo"></span>
+
+      <ul class="pages" id="navLinks">
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="notícias.html">Notícias</a></li>
+        <li><a href="paginaEducacao.html">Educação</a></li>
+        <li><a href="investimentos.html">Investimentos</a></li>
+      </ul>
+
+      <div class="right-icons">
+        <i class="fas fa-bars" onclick="toggleMenu()"></i>
+        <ul class="menu-dropdown" id="menuDropdown">
+          <li><a href="metas.html">Metas</a></li>
+          <li><a href="adicao-dados.html">Adicionar notícia</a></li>
+          <li><a href="curtidas.html">Favoritos</a></li>
+          <li><a href="gastostabela.html">Gastos</a></li>
+          <li><a href="tutorial.conosco.html">Tutoriais</a></li>
+          <li><a href="categorias.html">Pesquise Aqui</a></li>
+        </ul>
+      </div>
+
+      <div class="usuario-menu" onclick="toggleUserMenu()">
+        <i class="fas fa-user"></i>
+        <ul class="user-dropdown" id="userDropdown">
+          <li id="userMenu"></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="privacidade.html">Privacidade</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+    <!--Navbar-->
+  <main>
+    <section class="intro">
+      <h2>Planeje suas Metas Financeiras</h2>
+      <p>Estabelecer metas é essencial para conquistar seus sonhos e manter o controle do seu dinheiro.</p>
+      <p>Com essa ferramenta, você poderá <strong>criar, editar e acompanhar</strong> seus objetivos, visualizando o
+        progresso financeiro em tempo real.</p>
+      <p>Assim, fica mais fácil se organizar e alcançar aquilo que realmente importa.</p>
+    </section>
+    <section class="bloco-conteudo exemplo-meta">
+      <h3>Exemplo de meta preenchida</h3>
+      <p><strong>Meta:</strong> Comprar uma moto</p>
+      <p><strong>Valor a alcançar:</strong> R$ 10.000,00</p>
+      <p><strong>Valor guardado:</strong> R$ 5.000,00</p>
+      <p><strong>Data final:</strong> 30/06/2025</p>
+      <p><strong>Status:</strong> Em andamento</p>
+      <p><strong>Progresso:</strong> 50% — Faltam R$ 5.000,00 para atingir o objetivo.</p>
+    </section>
+
+
+    <!-- Bloco da tabela -->
+    <section class="bloco-conteudo">
+      <button id="btnNovaMeta">+ Nova Meta</button>
+
+      <section id="listaMetas">
+        <table>
+          <thead>
+            <tr class="sera">
+              <th>Meta</th>
+              <th>Valor a alcançar (R$)</th>
+              <th>Valor guardado (R$)</th>
+              <th>Data final</th>
+              <th>Progresso</th>
+              <th>Status</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody id="corpoTabelaMetas">
+            <!-- Metas dinâmicas -->
+          </tbody>
+        </table>
+      </section>
+    </section>
+
+    <!-- Bloco do formulário -->
+    <section class="bloco-conteudo" id="formularioMeta" style="display: none;">
+      <h3>Cadastrar Nova Meta</h3>
+      <form id="formMeta">
+        <input type="hidden" id="idMeta">
+
+                <label>Qual o nome da sua Meta?
+                    <input type="text" id="nomeMeta" required>
+                  </label>
+
+                <label>Quanto você quer guardar? (R$)
+                    <input type="number" id="valorObjetivo" min="0" step="any" required>
+                  </label>
+
+                <label>Quanto você já tem? (R$)
+                    <input type="number" id="valorAtual" min="0" step="any" required>
+                  </label>
+
+                <label>Em quanto tempo deseja alcançar o objetivo?
+                    <input type="date" id="dataLimite" required>
+                  </label>
+
+                <button type="submit">Salvar Meta</button>
+                <button type="button" id="cancelarMeta">Cancelar</button>
+             
+      </form>
+    </section>
+  </main>
+  <footer>
+    <div class="rodape" id="rodape">
+      <div class="logotipo">
+        <a href="homepage.html">
+          <img src="/img/imgs-bernardo/logomelhorada.png" alt="Logotipo">
+        </a>
+      </div>
+
+      <div class="containerborder">
+        <p><strong>A +Grana te ajuda a cuidar melhor do seu patrimônio, vem aprender com a gente!</strong>
+        </p>
+        <div class="redes-sociais">
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram da +Grana"><i
+              class="fab fa-instagram"></i>+Grana</a>
+          <a href="https://linkedin.com" target="_blank" aria-label="linkedin da +Grana"><i
+              class="fab fa-linkedin-in"></i>+Grana</a>
         </div>
       </div>
-    </header>
-    <main>
-        <h3>Boas vindas</h3>
-        <p>Sejam bem-vindos à home-page do projeto de TI 1 - Trabalho
-        Interdisciplinar</p>
-        <p>Esse conteúdo que você está lendo foi criado para exemplificar como
-        criar o seu site integrado com o ambiente de login e o back end que
-        utiliza o JSON Server.</p>
-        <p>Ao criar o seu site, você deve adaptar esse código para sua neessidade ou começar do zero, excluindo todo esse conteúdo.
-        </p>
+    </div>
+  </footer>
+  <div id="notificacao" class="toast"></div>
 
-        <h3>Arquivos do site (Front End)</h3>
-        <p>Para montar seu site, edite os arquivos existentes e crie novos arquivos na pasta <code>public</code> que mantem todos os arquivos da parte de Front End do site, a interface que é vista pelo usuário no navegador.</p>
+  <script src="js/user.js"></script>
 
-        <p>Nesta pasta <code>public</code>, sugerimos que você organize os arquivos do seu site da seguinte maneira:</p>
-        <ul>
-            <li><strong>Pasta <code>assets</code></strong>: os arquivos de formatação (CSS), os scripts (JS), as imagens utilizadas no site (JPG, PNG, GIF, SVG, etc), fontes (TTF) e outros arquivos gerais utilizados por todo o site.</li>
-            <li><strong>Pasta <code>modulos</code></strong>: os arquivos utilizados na implementação das funcionalidades do site. Separe uma sub-pasta para cada novo módulo ou funcionalidade. Pode também ser utilizado para dividir o trabalho de cada membro do grupo.</li>
-            <li><strong>Arquivo <code>index.html</code></strong>: arquivo que representa a "home page" do site.</li>
-        </ul>
+  <script src="js/metas.js"></script>
 
-        <h3>Módulo de Login</h3>
-        <p>O módulo de login de usuário traz uma funcionalidade completa de registro de usuários e validação de login e senha.</p>
-        <h4>Integração do site com módulo de Login</h4>
-        <p>Para utilizar o módulo de login, basta incluir o script na sua página colocando a seguinte tag no HEAD</p>
-        <pre>&lt;script src="./assets/js/login.js"&gt&lt;script&gt;</pre>
-        <p>Ao incluir o script de login na sua página, caso o usuário ainda não tenha efetuado login, ao acessar a home-page do site, o navegador será direcionado para o formulário de <strong>Identificação de Usuário</strong>. Se o usuário informar corretamente o login e a senha, o navegador será direcionado para a Home-Page.</p>
-        <h4>Sessão do usuário logado</h4>
-        <p>Assim que o usuário se identifica e acessa a parte privada do site, o módulo de login cria uma chave do sessionStorage do navegador com o título <strong>usuarioCorrente</strong> e cujo conteúdo é um objeto com os atributos: id, nome, login, senha e email. </p>
-        <h4>Base de dados de usuários</h4>
-        <p>Inicialmente o módulo de login é configurado com dois usuários: </p>
-        <ul>
-            <li>admin - Senha: 123</li>
-            <li>user - Senha: 123</li>
-        </ul>
+  <script>
+    const menuBtn = document.getElementById("hamburguerMenu");
+    const dropdown = document.getElementById("dropdownMenu");
 
-        <h3>Servidor Web e API baseada no JSON Server (Back end)</h3>
-        <p>O ambiente de trabalho disponibilizado para suportar o Trabalho Interdisciplinar 1 é baseado no Node.js. A aplicação de back end utiliza o módulo JSON Server para criar um Servidor Web que prove duas estruturas separadas:
-        <ul>
-            <li><strong>Arquivos estáticos (Pasta <code>public</code>)</strong>: da acesso aos arquivos utilizados no front end (HTML, CSS e JavaScript).</li>
-            <li><strong>API RESTful (pasta <code>db</code>)</strong>: uma interface para acesso aos dados definidos no arquivo db.json.</li>
-        </ul></p>
+    menuBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      dropdown.classList.toggle("esconder");
+    });
 
-        <h4>Arquitetura do site</h4>
-        <p>A imagem que se segue apresenta a arquitetura desse ambiente, mostrando as duas refletindo as pastas desse ambiente.</p>
-        <p><img class="img-fluid d-block w-75 m-auto" src="./assets/images/servidor.png" alt=""></p>
+    // Fecha o dropdown ao clicar fora dele
+    window.addEventListener("click", function (e) {
+      if (!menuBtn.contains(e.target) && !dropdown.contains(e.target)) {
+        dropdown.classList.add("esconder");
+      }
+    });
+  </script>
 
-        <h4>Arquivo db.json</h4>
-        <p>O arquivo JSON utilizado para definição das estruturas dos dados providos pela aplicação é localizado na pasta db e tem um formato como o mostrado no exemplo da figura a seguir. Esse arquivo define uma estrutura hipotética de contatos que descreve itens com os seguintes atributos: <code>id</code>, <code>nome</code> e <code>cidade</code>. para o JSON Server, é fundamental que toda estrutura tenha um atributo de identificador de nome <code>id</code>.</p>
-        <p><img class="img-fluid d-block w-50 m-auto" src="./assets/images/arquivo_json.png" alt=""></p>
-    </main>
-  </body>
+</body>
+
 </html>
