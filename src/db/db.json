@@ -184,7 +184,7 @@
       "nome": "admin",
       "data": "01/01/2000",
       "endereco": "Avenida Brasil, 2000, Barra da Tijuca, Rio de Janeiro",
-      "usuario": "admin",
+      "admin": true,
       "senha": "admin123",
       "salario": "R$3000,00"
     },
@@ -195,7 +195,8 @@
       "endereco": "Rua 1",
       "usuario": "Bernardo",
       "senha": "123",
-      "salario": "1"
+      "salario": "1",
+      "admin": false
     }
   ]
 }

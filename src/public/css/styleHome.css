@@ -34,6 +34,10 @@
      flex: 1;
  }
 
+ .menuHide {
+     display: none;
+ }
+
  .pages li a {
      display: block;
      text-decoration: none;
@@ -177,6 +181,9 @@
      .pages.show {
          display: flex;
      }
+     .menuHide{
+        display: flex;
+     }
  }
 
  /* Header Fim */
@@ -205,9 +212,9 @@
      font-weight: 600;
      font-family: 'Times New Roman', Times, serif;
      color: #0a1a37;
-    }
-    
-    .cardTitulo:hover {
+ }
+
+ .cardTitulo:hover {
      color: #034C1C;
  }
 
