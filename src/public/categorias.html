@@ -10,44 +10,45 @@
 </head>
 
 <body>
-    <header>
-        <div class="navbar" id="navbar">
-            <div class="logo">
-                <a href="homepage.html">
-                    <img src="img/imgs-bernardo/logomelhorada.png" alt="logo" id="logo">
-                </a>
-            </div>
+    <!--Navbar-->
+  <header>
+    <div class="navbar" id="navbar">
+      <div class="logo">
+        <a href="homepage.html">
+          <img src="img/imgs-bernardo/logomelhorada.png" alt="logo" id="logo">
+        </a>
+      </div>
 
-            <ul class="pages" id="navLinks">
-                <li><a href="homepage.html">Home</a></li>
-                <li><a href="pagina-noticias.html">Notícias</a></li>
-                <li><a href="paginaEducacao.html">Educação</a></li>
-                <li><a href="investimentos.html">Investimentos</a></li>
-            </ul>
+      <ul class="pages" id="navLinks">
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="notícias.html">Notícias</a></li>
+        <li><a href="paginaEducacao.html">Educação</a></li>
+        <li><a href="investimentos.html">Investimentos</a></li>
+      </ul>
 
-            <div class="right-icons">
-                <i class="fas fa-bars" onclick="toggleMenu()"></i>
-                <ul class="menu-dropdown" id="menuDropdown">
-                    <li><a href="adicao-dados.html">Adicionar notícia</a></li>
-                    <li><a href="curtidas.html">Favoritos</a></li>
-                    <li><a href="gastostabela.html">Gastos</a></li>
-                    <li><a href="metas.html">Metas</a></li>
-                    <li><a href="tutorial.conosco.html">Tutoriais</a></li>
-                    <li><a href="categorias.html">Pesquise Aqui</a></li>
-                    <li><a href="gastostabela.html">Tabela</a></li>
-                </ul>
-            </div>
+      <div class="right-icons">
+        <i class="fas fa-bars" onclick="toggleMenu()"></i>
+        <ul class="menu-dropdown" id="menuDropdown">
+          <li><a href="metas.html">Metas</a></li>
+          <li><a href="adicao-dados.html">Adicionar notícia</a></li>
+          <li><a href="curtidas.html">Favoritos</a></li>
+          <li><a href="gastostabela.html">Gastos</a></li>
+          <li><a href="tutorial.conosco.html">Tutoriais</a></li>
+          <li><a href="categorias.html">Pesquise Aqui</a></li>
+        </ul>
+      </div>
 
-            <div class="usuario-menu" onclick="toggleUserMenu()">
-                <i class="fas fa-user"></i>
-                <ul class="user-dropdown" id="userDropdown">
-                    <li><a href="usuarios.html">Login</a></li>
-                    <li><a href="usuarios.html">Logout</a></li>
-                    <li><a href="#">Privacidade</a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
+      <div class="usuario-menu" onclick="toggleUserMenu()">
+        <i class="fas fa-user"></i>
+        <ul class="user-dropdown" id="userDropdown">
+          <li id="userMenu"></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="privacidade.html">Privacidade</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+    <!--Navbar-->
 
     <div class="app-container">
         <div class="categorias-coluna">
@@ -145,11 +146,12 @@
                 return;
             }
 
+            // CORREÇÃO APLICADA AQUI: troquei 'item.banner' por 'conteudo.banner'
             resultadosDiv.innerHTML = `
                 <div class="detalhes-conteudo">
                     <button onclick="voltarParaLista('${categoriaOriginal}')">← Voltar</button>
                     <h2>${conteudo.titulo}</h2>
-                    ${conteudo.banner ? `<img src="${conteudo.banner.startsWith('img/') ? '../' + item.banner : item.banner}" alt="${conteudo.descricao}" style="max-width: 100%; height: auto; margin-bottom: 15px; border-radius: 8px;">` : ''}
+                    ${conteudo.banner ? `<img src="${conteudo.banner.startsWith('img/') ? '../' + conteudo.banner : conteudo.banner}" alt="${conteudo.descricao}" style="max-width: 100%; height: auto; margin-bottom: 15px; border-radius: 8px;">` : ''}
                     <div class="conteudo-texto">${conteudo.conteudoCompleto}</div>
                     ${conteudo.autor ? `<p><strong>Autor:</strong> ${conteudo.autor}</p>` : ''}
                     ${conteudo.data ? `<p><strong>Data:</strong> ${conteudo.data}</p>` : ''}
@@ -291,7 +293,7 @@
                                 categoria: item.categoria || categoria,
                                 descricao: item.resumo || "",
                                 conteudoCompleto: item.texto || item.conteudo || "",
-                                banner: item.banner || item.imagem || "", // Aqui está o problema com caminhos de imagem nos dados
+                                banner: item.banner || item.imagem || "",
                                 autor: item.autor || "",
                                 data: item.data || ""
                             });
@@ -312,20 +314,21 @@
         init();
     </script>
     <script>
-        const menuBtn = document.getElementById("hamburguerMenu");
-        const dropdown = document.getElementById("dropdownMenu");
+        // Observação: Este trecho de código para o menu dropdown parece ter alguns problemas.
+        // As funções toggleMenu() e toggleUserMenu() não estão definidas e os IDs usados no script
+        // não correspondem exatamente aos do HTML. Recomendo revisar esta parte.
+        
+        // Exemplo de como a função toggleMenu poderia ser:
+        function toggleMenu() {
+            const dropdown = document.getElementById("menuDropdown");
+            dropdown.classList.toggle("esconder"); // Supondo que você tenha uma classe 'esconder' no CSS
+        }
 
-        menuBtn.addEventListener("click", function (e) {
-            e.preventDefault();
-            dropdown.classList.toggle("esconder");
-        });
-
-        // Fecha o dropdown ao clicar fora dele
-        window.addEventListener("click", function (e) {
-            if (!menuBtn.contains(e.target) && !dropdown.contains(e.target)) {
-                dropdown.classList.add("esconder");
-            }
-        });
+        // Exemplo para o menu do usuário
+        function toggleUserMenu() {
+            const userDropdown = document.getElementById("userDropdown");
+            userDropdown.classList.toggle("esconder");
+        }
     </script>
     <script src="js/user.js"></script>
 </body>
