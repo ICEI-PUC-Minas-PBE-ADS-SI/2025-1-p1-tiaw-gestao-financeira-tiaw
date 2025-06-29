@@ -56,7 +56,7 @@ Link de acesso para o site hospedado:
 
 # Apresentação
 <!-- Colocar o pdf da apresentação nessa ref -->
-* <a href="/presentation/README.md">Apresentação do projeto</a>
+* <a href="/presentation/Apresentação.pdf">Apresentação do projeto</a>
 
 
 * **Pasta docs**: documentação completa do projeto;<!-- links em Registro de software -->
