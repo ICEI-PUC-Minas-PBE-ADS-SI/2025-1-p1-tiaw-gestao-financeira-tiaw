@@ -63,7 +63,7 @@ main{
 }
 
 /* Ícone de menu (hambúrguer) */
-.fas.fa-bars {
+.fa-solid.fa-bars {
   font-size: 2.3rem;
   color: #e7f5e9;
   cursor: pointer;
@@ -73,7 +73,7 @@ main{
   height: 25px;
 }
 
-.fas.fa-bars:hover {
+.fa-solid.fa-bars:hover {
   color: #42e619;
 }
 
@@ -578,13 +578,11 @@ h1 {
 
 h1 {
   text-align: center;
-  margin-top: 170px;
-  /* Ajustado para o header de 150px + espaçamento extra */
   margin-bottom: 30px;
 }
 
 /* Ícone de menu (hambúrguer) */
-.fas.fa-bars {
+.fa-solid.fa-bars {
   font-size: 2.3rem;
   color: black;
   cursor: pointer;

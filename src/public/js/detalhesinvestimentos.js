@@ -33,7 +33,7 @@ async function carregarDetalhes() {
     document.getElementById('imagem').src = investimento.imagem;
     document.getElementById('imagem').alt = investimento.titulo;
     document.getElementById('resumo').textContent = investimento.resumo;
-    document.getElementById('conteudo').textContent = investimento.conteudo;
+    document.getElementById('conteudo').innerHTML = investimento.texto;
 
   } catch (erro) {
     console.error("Erro ao carregar os dados:", erro.message);

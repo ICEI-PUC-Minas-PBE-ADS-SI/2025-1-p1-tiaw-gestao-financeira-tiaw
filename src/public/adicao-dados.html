@@ -157,14 +157,14 @@
                 }
             });
 
-            criarNoticia();
-
+            
         }
         const input = document.getElementById('imagemBanner');
         const botaoBanner = document.getElementById("botaoBanner");
         input.addEventListener('change', () => {
             if (input.files.length > 0) {
                 botaoBanner.textContent = input.files[0].name;
+                criarNoticia();
             }
             else {
                 botaoBanner.textContent = "Escolher Imagem"
