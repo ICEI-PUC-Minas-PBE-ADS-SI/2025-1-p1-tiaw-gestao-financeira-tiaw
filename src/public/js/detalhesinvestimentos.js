@@ -66,7 +66,10 @@ async function carregarComentarios(id) {
 
 // Salva novo comentário no investimento (faz PUT no investimento inteiro)
 async function salvarComentario(id, texto) {
+  const usuarioLogado = JSON.parse(localStorage.getItem("usuarioLogado"));
+  const nomeUsuario = usuarioLogado?.nome;
   try {
+
     // Busca investimento atual
     const res = await fetch(`http://localhost:3000/investimento/${id}`);
     if (!res.ok) throw new Error("Investimento não encontrado para salvar comentário");
@@ -75,7 +78,7 @@ async function salvarComentario(id, texto) {
 
     const novoComentario = {
       id: Date.now(),
-      usuario: "Bernardo", // Pode pegar de um campo input se quiser
+      usuario: JSON.parse(localStorage.getItem("usuarioLogado"))?.nome,
       comentario: texto
     };
 
