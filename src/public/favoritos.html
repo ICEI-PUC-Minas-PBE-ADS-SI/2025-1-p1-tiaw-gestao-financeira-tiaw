@@ -5,150 +5,57 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Favoritos</title>
-  <link rel="stylesheet" href="css/styleHome.css" />
   <link rel="stylesheet" href="css/stylenotícias.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-  <style>/* Estilo do fundo escurecido */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 9999;
-  padding-top: 60px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.7);
-  animation: fadeIn 0.3s ease;
-}
-
-/* Estilo da caixa de conteúdo */
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 30px;
-  border-radius: 12px;
-  width: 90%;
-  max-width: 700px;
-  position: relative;
-  animation: slideDown 0.4s ease;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
-}
-
-/* Botão de fechar */
-.close {
-  color: #aaa;
-  position: absolute;
-  top: 12px;
-  right: 20px;
-  font-size: 30px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: red;
-  text-decoration: none;
-}
-
-/* Imagem da notícia */
-#modal-imagem {
-  width: 100%;
-  height: auto;
-  margin: 15px 0;
-  border-radius: 8px;
-}
-
-/* Animações */
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
-@keyframes slideDown {
-  from {transform: translateY(-40px); opacity: 0;}
-  to {transform: translateY(0); opacity: 1;}
-}
-.favorite-icon {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 26px;
-  cursor: pointer;
-  color: red;
-  transition: transform 0.2s;
-}
-
-.favorite-icon:hover {
-  transform: scale(1.2);
-}
-
-</style>
 </head>
 
 <body>
   <!-- Header padrão com menu hambúrguer -->
-  <header class="navbar">
-    <div class="logo">
-      <a href="homepage.html">
-        <img src="img/imgs-bernardo/logomelhorada.png" alt="logo" />
-      </a>
-    </div>
-    
-    <ul class="pages" id="navLinks">
-      <li><a href="homepage.html">Home</a></li>
-      <li><a href="pagina-noticias.html">Notícias</a></li>
-    </ul>
+    <header>
+        <div class="navbar" id="navbar">
+            <div class="logo">
+                <a href="homepage.html">
+                    <img src="img/imgs-bernardo/logomelhorada.png" alt="logo" id="logo">
+                </a>
+            </div>
 
-    <div class="espaco"></div>
-    <i class="fas fa-bars" onclick="toggleMenu()"></i>
-    <ul class="menu-dropdown" id="menuDropdown">
-      <li><a href="favoritos.html">Favoritos</a></li>
-    </ul>
+            <ul class="pages" id="navLinks">
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="pagina-noticias.html">Notícias</a></li>
+                <li><a href="paginaEducacao.html">Educação</a></li>
+                <li><a href="investimentos.html">Investimentos</a></li>
+            </ul>
 
-    <div class="usuario-menu" onclick="toggleUserMenu()">
-      <i class="fas fa-user"></i>
-      <ul class="user-dropdown" id="userDropdown">
-        <li><a href="#">Perfil</a></li>
-        <li><a href="#" onclick="logout()">Sair</a></li>
-      </ul>
+            <div class="right-icons">
+                <i class="fas fa-bars" onclick="toggleMenu()"></i>
+                <ul class="menu-dropdown" id="menuDropdown">
+                    <li class="menuHide"><a href="homepage.html">Home</a></li>
+                    <li class="menuHide"><a href="notícias.html">Notícias</a></li>
+                    <li class="menuHide"><a href="paginaEducacao.html">Educação</a></li>
+                    <li class="menuHide"><a href="investimentos.html">Investimentos</a></li>
+                    <li><a href="metas.html">Metas</a></li>
+                    <li id="adminVisivel"><a href="adicao-dados.html">Adicionar notícia</a></li>
+                    <li><a href="favoritos.html">Favoritos</a></li>
+                    <li><a href="gastostabela.html">Gastos</a></li>
+                    <li><a href="tutorial.conosco.html">Tutoriais</a></li>
+                    <li><a href="categorias.html">Pesquise Aqui</a></li>
+                </ul>
+            </div>
 
-      <div class="right-icons">
-        <i class="fas fa-bars" onclick="toggleMenu()"></i>
-        <ul class="menu-dropdown" id="menuDropdown">
-          <li class="menuHide"><a href="homepage.html">Home</a></li>
-          <li class="menuHide"><a href="notícias.html">Notícias</a></li>
-          <li class="menuHide"><a href="paginaEducacao.html">Educação</a></li>
-          <li class="menuHide"><a href="investimentos.html">Investimentos</a></li>
-          <li><a href="metas.html">Metas</a></li>
-          <li><a href="adicao-dados.html">Adicionar notícia</a></li>
-          <li><a href="favoritos.html">Favoritos</a></li>
-          <li><a href="gastostabela.html">Gastos</a></li>
-          <li><a href="tutorial.conosco.html">Tutoriais</a></li>
-          <li><a href="categorias.html">Pesquise Aqui</a></li>
-        </ul>
-      </div>
-
-      <div class="usuario-menu" onclick="toggleUserMenu()">
-        <i class="fas fa-user"></i>
-        <ul class="user-dropdown" id="userDropdown">
-          <li id="userMenu"></li>
-          <li><a href="login.html">Login</a></li>
-          <li><a href="privacidade.html">Privacidade</a></li>
-        </ul>
-      </div>
-    </div>
-  </header>
-
-  <h1>Seus Favoritos</h1>
-
-  <div id="favoritos-container"></div>
+            <div class="usuario-menu" onclick="toggleUserMenu()">
+                <i class="fas fa-user"></i>
+                <ul class="user-dropdown" id="userDropdown">
+                    <li id="userMenu"></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="privacidade.html">Privacidade</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
 
   <main>
+    <h1>Seus Favoritos</h1>
     <div id="favoritos-container"></div>
 
     <!-- Modal de detalhe -->
@@ -183,7 +90,7 @@
       </div>
     </div>
   </footer>
-
+  <script src="js/user.js"></script>
   <script src="js/favoritos.js"></script>
   <script src="js/menuHamburguer.js"></script>
 </body>

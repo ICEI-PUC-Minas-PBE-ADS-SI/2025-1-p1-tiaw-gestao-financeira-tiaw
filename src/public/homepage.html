@@ -37,7 +37,7 @@
           <li class="menuHide"><a href="paginaEducacao.html">Educação</a></li>
           <li class="menuHide"><a href="investimentos.html">Investimentos</a></li>
           <li><a href="metas.html">Metas</a></li>
-          <li><a href="adicao-dados.html">Adicionar notícia</a></li>
+          <li id="adminVisivel"><a href="adicao-dados.html">Adicionar notícia</a></li>
           <li><a href="favoritos.html">Favoritos</a></li>
           <li><a href="gastostabela.html">Gastos</a></li>
           <li><a href="tutorial.conosco.html">Tutoriais</a></li>
@@ -149,32 +149,34 @@
 
 
       fetch("http://localhost:3000/noticias")
-  .then(res => res.json())
-  .then(data => {
-    const noticia = document.getElementById("noticias");
-    let strNoticia = "";
+        .then(res => res.json())
+        .then(data => {
+          const noticia = document.getElementById("noticias");
+          let strNoticia = "";
+          for (let i = 0; i < 4; i++) {
+            let not = data[i];
+            strNoticia += `
+                                <div class="cardEducacao card mb-3 mx-auto" style="width: 100%">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <a href="colocarAquiLink.html?id=${not.id}">
+                                            <img src="${not.imagem}" class="imagemCardNoticia img-fluid rounded-start" alt="..."></a>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <a href="colocarAquiLink.html?id=${not.id}">
+                                                <h5 class="cardTitulo card-title">${not.titulo}</h5>                                        
+                                                </a>
+                                                <p class="card-text">${not.resumo}</p>
+                                                <p class="card-text"><small class="text-body-secondary">${not.autor}</small></p>
+                                            </div>
+                                        </div>
 
-    data.slice(0, 4).forEach(not => {
-      strNoticia += `
-        <div class="cardEducacao card mb-3 mx-auto" style="width: 70%; cursor: pointer;" data-id="${not.id}" onclick="abrirModalPorId(this)">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img src="${not.imagem}" class="imagemCardNoticia img-fluid rounded-start" alt="${not.titulo}">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="cardTitulo card-title">${not.titulo}</h5>                                        
-                <p class="card-text">${not.resumo}</p>
-                <p class="card-text"><small class="text-body-secondary">${not.data || ''}</small></p>
-              </div>
-            </div>
-          </div>
-        </div>`;
-    });
-
-    noticia.innerHTML = strNoticia;
-  })
-  .catch(err => console.error(err));
+                                    </div>
+                                </div>`
+          }
+          noticias.innerHTML = strNoticia;
+        }).catch(err => console.error(err));
 
       fetch("http://localhost:3000/investimento")
         .then(res => res.json())

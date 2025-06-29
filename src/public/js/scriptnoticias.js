@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   function abrirModal(noticia) {
     document.getElementById('modal-titulo').textContent = noticia.titulo;
     document.getElementById('modal-imagem').src = noticia.imagem;
-  document.getElementById('modal-conteudo').innerHTML = noticia.conteudo.replace(/\n/g, '<br>');
+    document.getElementById('modal-conteudo').innerHTML = noticia.texto;
     document.getElementById('modal').style.display = 'block';
   }
 

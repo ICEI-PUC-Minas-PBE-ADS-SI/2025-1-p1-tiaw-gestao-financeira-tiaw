@@ -193,7 +193,6 @@
  .cardEducacao {
      border-top: 3px solid #0a1a37;
      border-bottom: 3px solid #0a1a37;
-     background-color: #e7f5e9;
  }
 
  .cardEducacao p {
@@ -202,9 +201,6 @@
 
  }
 
- .textoParagrafo {
-     background-color: #e7f5e9;
- }
 
  .cardTitulo {
      font-size: 25px;
@@ -218,8 +214,8 @@
  }
 
  .imagemCardNoticia {
-     width: 250px;
-     height: 200px;
+     width: 100%;
+     height: 250px;
      transition: transform 0.3s ease;
  }
 
