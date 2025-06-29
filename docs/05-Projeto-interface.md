@@ -10,19 +10,19 @@
 ## User flow
 
 Página Home Investimento, Educação e Notícias, ligadas pela NavBar:
-![Homes](imgs/figma/homes.png)
+![Homes](/imgs/figma/homes.png)
 
 Menu lateral aberto:
-![Menu Lateral](imgs/figma/menuLateral.png)
+![Menu Lateral](/imgs/figma/menuLateral.png)
 
 Páginas acessíveis por meio do menu lateral:
-![Menu Lateral](imgs/figma/pagLateral.png)
+![Menu Lateral](/imgs/figma/pagLateral.png)
 
 Planilha funcional:
-![Planilha Funcional](imgs/figma/planilha.png)
+![Planilha Funcional](/imgs/figma/planilha.png)
 
 Login:
-![Login](imgs/figma/login.png)
+![Login](/imgs/figma/login.png)
 
 ## Wireframes
 Página Home do Site:
@@ -32,40 +32,40 @@ Menu aberto com as funcionalidades do usuário:
 ![Menu Aberto](/imgs/Wireframe/menu.png)
 
 Aba de Investimentos:
-![Aba de Investimentos](imgs/Wireframe/investimentoHome.png)
+![Aba de Investimentos](/imgs/Wireframe/investimentoHome.png)
 
 Aba de Notícias:
-![Aba de Notícias](imgs/Wireframe/noticiaHome.png)
+![Aba de Notícias](/imgs/Wireframe/noticiaHome.png)
 
 Aba de Educação Financeira:
-![Aba de Educação](imgs/Wireframe/educacaoHome.png)
+![Aba de Educação](/imgs/Wireframe/educacaoHome.png)
 
 Login:
-![Login](imgs/Wireframe/login.png)
+![Login](/imgs/Wireframe/login.png)
 
 Rodapé:
-![Rodapé](imgs/Wireframe/rodape.png)
+![Rodapé](/imgs/Wireframe/rodape.png)
 
 Minha Conta:
-![Minha Conta](imgs/Wireframe/conta.png)
+![Minha Conta](/imgs/Wireframe/conta.png)
 
 Pesquise aqui:
-![Pesquisa](imgs/Wireframe/pesquisa.png)
+![Pesquisa](/imgs/Wireframe/pesquisa.png)
 
 Tutorial:
-![Tutorial](imgs/Wireframe/tutorial.png)
+![Tutorial](/imgs/Wireframe/tutorial.png)
 
 Planilha:
-![Planilha](imgs/Wireframe/planilha.png)
+![Planilha](/imgs/Wireframe/planilha.png)
 
 Planilha Aberta:
-![Planilha Aberta](imgs/Wireframe/planilhaAberta.png)
+![Planilha Aberta](/imgs/Wireframe/planilhaAberta.png)
 
 Converse Conosco:
-![Converse Conosco](imgs/Wireframe/converse.png)
+![Converse Conosco](/imgs/Wireframe/converse.png)
 
 Favoritos:
-![Favoritos](imgs/Wireframe/favoritos.png)
+![Favoritos](/imgs/Wireframe/favoritos.png)
 
 
 ### Protótipo Interativo
