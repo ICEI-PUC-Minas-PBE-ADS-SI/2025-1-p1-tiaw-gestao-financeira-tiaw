@@ -622,3 +622,20 @@ p {
     }
 
 }
+.favorite-icon {
+  font-size: 28px;
+  color: #888; /* cor padrão */
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+  margin-top: 10px;
+}
+
+.favorite-icon:hover {
+  transform: scale(1.2); /* efeito de zoom no hover */
+  color: #ff6b6b;         /* cor no hover */
+}
+
+.favorite-icon.favorito {
+  color: #e63946; /* vermelho vibrante quando favoritado */
+  transform: scale(1.3);
+}

@@ -12,19 +12,29 @@
 
 <body>
   <!-- Header padrão com menu hambúrguer -->
-  <header>
-    <div class="navbar" id="navbar">
-      <div class="logo">
-        <a href="homepage.html">
-          <img src="img/imgs-bernardo/logomelhorada.png" alt="logo" id="logo">
-        </a>
-      </div>
+  <header class="navbar">
+    <div class="logo">
+      <a href="homepage.html">
+        <img src="img/imgs-bernardo/logomelhorada.png" alt="logo" />
+      </a>
+    </div>
+    
+    <ul class="pages" id="navLinks">
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="pagina-noticias.html">Notícias</a></li>
+    </ul>
 
-      <ul class="pages" id="navLinks">
-        <li><a href="homepage.html">Home</a></li>
-        <li><a href="pagina-noticias.html">Notícias</a></li>
-        <li><a href="paginaEducacao.html">Educação</a></li>
-        <li><a href="investimentos.html">Investimentos</a></li>
+    <div class="espaco"></div>
+    <i class="fas fa-bars" onclick="toggleMenu()"></i>
+    <ul class="menu-dropdown" id="menuDropdown">
+      <li><a href="favoritos.html">Favoritos</a></li>
+    </ul>
+
+    <div class="usuario-menu" onclick="toggleUserMenu()">
+      <i class="fas fa-user"></i>
+      <ul class="user-dropdown" id="userDropdown">
+        <li><a href="#">Perfil</a></li>
+        <li><a href="#" onclick="logout()">Sair</a></li>
       </ul>
 
       <div class="right-icons">
@@ -54,6 +64,9 @@
     </div>
   </header>
 
+  <h1>Seus Favoritos</h1>
+
+  <div id="favoritos-container"></div>
 
   <main>
     <h1>Notícias Favoritadas</h1>
@@ -70,7 +83,7 @@
     </div>
   </main>
 
-  
+
   <footer>
     <div class="rodape" id="rodape">
       <div class="logotipo">

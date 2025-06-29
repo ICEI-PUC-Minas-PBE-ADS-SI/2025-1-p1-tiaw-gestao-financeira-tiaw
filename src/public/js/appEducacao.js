@@ -209,13 +209,41 @@ function mostrarNoticias() {
           <p class="resumo">${noticia.resumo}</p>
           <p class="autor">${noticia.autor}</p>
           <p class="data">${noticia.data}</p>
-<i class="fas fa-heart favorite-icon ${noticia.favoritado ? 'favorito' : ''}" onclick="favorito(this, '${noticia.id}')" data-id="${noticia.id}"></i>
+<i class="${noticia.favoritado ? 'fas' : 'far'} fa-heart favorite-icon ${noticia.favoritado ? 'favorito' : ''}" onclick="favorito(this, '${noticia.id}')" data-id="${noticia.id}"></i>
+
 
           <i class="fas fa-heart favorite-icon ${noticia.favoritado ? 'favorito' : ''}" onclick="favorito(this, '${noticia.id}')" data-id="${noticia.id}"></i>
         </div>
       </div >
     `;
   }
+  function favorito(iconElement, id) {
+  fetch(`http://localhost:3000/educacao/${id}`)
+    .then(res => res.json())
+    .then(data => {
+      const novoStatus = !data.favoritado;
+
+      return fetch(`http://localhost:3000/educacao/${id}`, {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ favoritado: novoStatus })
+      }).then(res => {
+        if (!res.ok) throw new Error("Erro ao atualizar favorito");
+
+        // Aqui está o efeito visual que você queria do segundo código
+        iconElement.classList.toggle('favorito', novoStatus);
+        iconElement.classList.toggle('far', !novoStatus);  // ícone contorno
+        iconElement.classList.toggle('fas', novoStatus);   // ícone preenchido
+      });
+    })
+    .catch(error => {
+      console.error("Erro ao favoritar:", error);
+      alert("Não foi possível atualizar o favorito.");
+    });
+}
+
   noticiasEducativas.innerHTML = strNoticia;
   const botao = document.querySelector(".vejaMais");
   if (fim >= noticias.length) {
