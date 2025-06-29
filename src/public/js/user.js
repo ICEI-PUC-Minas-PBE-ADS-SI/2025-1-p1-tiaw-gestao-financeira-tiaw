@@ -69,6 +69,13 @@ document.addEventListener("DOMContentLoaded", () => {
     location.href = "login.html";
   }
 
+  const adicionar = document.getElementById("adminVisivel");
+  if (user.admin == true) {
+    adicionar.style.display = "block";
+  } else {
+    adicionar.style.display = "none";
+  }
+
   if (user) {
     const menu = document.getElementById("userMenu");
     if (menu) {

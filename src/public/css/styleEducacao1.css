@@ -35,7 +35,9 @@ a{
 .menuHide {
     display: none;
 }
-
+.adminVisivel{
+    display: none;
+}
 .pages li a {
     display: block;
     text-decoration: none;
