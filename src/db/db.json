@@ -108,7 +108,8 @@
       "imagem": "img/img-noticia/Pib.png",
       "resumo": "PIB sobe 2,5% puxado por serviços.",
       "conteudo": "O PIB brasileiro teve um crescimento de 2,5% no primeiro trimestre, impulsionado pelo setor de serviços...",
-      "id": "1"
+      "id": "1",
+      "favoritado": true
     },
     {
       "titulo": "Novo programa educacional é lançado",
@@ -136,7 +137,8 @@
       "imagem": "img/img-noticia/noticia.png",
       "resumo": "Estudantes apresentam projetos inovadores.",
       "conteudo": "Alunos do ensino médio apresentaram projetos científicos inovadores em evento regional...",
-      "id": "5"
+      "id": "5",
+      "favoritado": true
     },
     {
       "titulo": "Mercado financeiro reage a mudanças fiscais",

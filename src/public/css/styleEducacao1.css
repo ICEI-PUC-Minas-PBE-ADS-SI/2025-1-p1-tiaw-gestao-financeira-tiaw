@@ -2,15 +2,15 @@
 html,
 body {
     margin: 0;
-    margin-bottom: 20px;
     padding: 0;
 }
-
+a{
+    text-decoration: none;
+}
 /* Header */
 .navbar {
     background-color: #0a1a37;
     width: 100%;
-    padding: 10px 15px;
     border-bottom: 8px solid #42e619;
     display: flex;
     align-items: center;
@@ -30,6 +30,10 @@ body {
     gap: 20px;
     justify-content: center;
     flex: 1;
+}
+
+.menuHide {
+    display: none;
 }
 
 .pages li a {
@@ -158,12 +162,36 @@ body {
     border-radius: 5px;
 }
 
-/* Fim - Header */
+@media (max-width: 768px) {
+    .pages {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #e7f5e9;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+        width: 100%;
+        z-index: 999;
+    }
+
+    .pages.show {
+        display: flex;
+    }
+
+    .menuHide {
+        display: flex;
+    }
+}
+
+/* Header Fim */
 
 /* Main */
 
 main {
     height: 100%;
+    padding-top: 20px;
 }
 
 #noticiaEducativa {
@@ -207,28 +235,30 @@ main {
     align-items: center;
 }
 
-.vejaMais a {
-    text-decoration: none;
-    color: #fff;
-}
+
 
 .vejaMais {
     width: 200px;
     height: 75px;
-    border: solid 4px #fff;
     border-radius: 5px;
-    background-color: #0a1a37;
     font-size: 25px;
     font-weight: 500;
     margin: 40px auto;
     cursor: pointer;
+    color: #0a1a36;
+    border: #0a1a36 2px solid;
+    background-color: #fff;
 }
 
 .vejaMais:hover {
-    background-color: #034c1c;
-    color: #000;
+    color: #e6f4e8;
+    background-color: #0a1a36;
 }
 
+.vejaMais a{
+    color: #0a1a36;
+
+}
 .vejaMais a:hover {
     color: #ffffff;
 }
@@ -410,16 +440,16 @@ p {
     height: 50px;
     width: 100px;
     text-align: center;
-    background-color: #0a1a37;
     border-radius: 10px;
-    border: solid 4px #e7f5e9;
+    color: #0a1a36;
+    border: #0a1a36 2px solid;
+    background-color: #fff;
     font-size: 20px;
-
 }
 
 .btnEnviar:hover {
-    background-color: #42e619;
-    color: white;
+    color: #e6f4e8;
+    background-color: #0a1a36;
 }
 
 .iconeUsuario {
@@ -448,7 +478,7 @@ p {
 
 /* Fim Comentários */
 /* Fim Texto */
-/* Footer Inicio */
+/* Footer */
 .rodape {
     background-color: #0a1a37;
     margin-top: 40px;

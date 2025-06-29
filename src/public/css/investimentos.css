@@ -4,15 +4,19 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: #e7f5e9;
+html {
+  margin: 0;
+  padding: 0;
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Header */
 .navbar {
-  background-color: #e7f5e9;
+  background-color: #0a1a37;
   width: 100%;
-  padding: 10px 15px;
   border-bottom: 8px solid #42e619;
   display: flex;
   align-items: center;
@@ -34,10 +38,14 @@ body {
   flex: 1;
 }
 
+.menuHide {
+  display: none;
+}
+
 .pages li a {
   display: block;
   text-decoration: none;
-  color: black;
+  color: #e7f5e9;
   font-weight: bold;
   font-size: 1.8rem;
   padding: 10px 10px;
@@ -46,6 +54,7 @@ body {
 
 .pages li a:hover {
   background-color: #42e619;
+  color: #0a1a37;
   border-radius: 5px;
 }
 
@@ -59,7 +68,7 @@ body {
 /* Ícone de menu (hambúrguer) */
 .fas.fa-bars {
   font-size: 2.3rem;
-  color: black;
+  color: #e7f5e9;
   cursor: pointer;
   display: block;
   margin-right: 10px;
@@ -67,8 +76,12 @@ body {
   height: 25px;
 }
 
+.fas.fa-bars:hover {
+  color: #42e619;
+}
+
 /*Dropdown do Menu*/
-.menu-dropdown { 
+.menu-dropdown {
   display: none;
   position: absolute;
   right: 50px;
@@ -87,15 +100,14 @@ body {
   text-align: center;
 }
 
-.menu-dropdown li a
-{
+.menu-dropdown li a {
   text-decoration: none;
   color: #333;
   display: block;
   align-items: center;
-  width: 100%;               
-  padding: 10px 0;           
-  background-color: transparent; 
+  width: 100%;
+  padding: 10px 0;
+  background-color: transparent;
 }
 
 .menu-dropdown li a:hover {
@@ -146,9 +158,9 @@ body {
   color: #333;
   display: block;
   align-items: center;
-  width: 100%;               
-  padding: 10px 0;          
-  background-color: transparent; 
+  width: 100%;
+  padding: 10px 0;
+  background-color: transparent;
 }
 
 .user-dropdown li a:hover {
@@ -173,6 +185,10 @@ body {
   .pages.show {
     display: flex;
   }
+
+  .menuHide {
+    display: flex;
+  }
 }
 
 /*containers*/
@@ -187,13 +203,12 @@ body {
 
 .containerleft,
 .containerright {
-  background-color: #e7f5e9;
   padding: 20px;
 }
 
 .containerleft {
   width: 730px;
-  border-right: 5px solid #42e619;
+  border-right: 5px solid #0a1a37;
 }
 
 .containerright {
@@ -316,14 +331,15 @@ body {
 }
 
 .favorito-btn i.fa-solid {
-  color: #2db10f; 
+  color: #2db10f;
 }
+
 /*End of Carousel*/
 
 
-/*Footer*/
+/* Footer */
 .rodape {
-  background-color: #e7f5e9;
+  background-color: #0a1a37;
   margin-top: 40px;
   border-top: 8px solid #42e619;
   padding: 20px;
@@ -349,7 +365,7 @@ body {
 .containerborder p {
   font-size: 1.1em;
   margin-bottom: 15px;
-  color: #333;
+  color: #e7f5e9;
 }
 
 .redes-sociais {
@@ -360,7 +376,7 @@ body {
 }
 
 .redes-sociais a {
-  color: #333;
+  color: #e7f5e9;
   font-size: 1.5em;
   display: flex;
   align-items: center;
@@ -373,32 +389,10 @@ body {
   color: #42e619;
 }
 
-.info-investimento {
-  background-color: #f9f9f9;
-  border-radius: 12px;
-  padding: 20px 25px;
-  margin-top: 30px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  font-family: 'Montserrat', sans-serif;
-  animation: fadeIn 0.5s ease-in-out;
-}
-
-.info-investimento h3 {
-  font-size: 1.6rem;
-  color: #333;
-  margin-bottom: 10px;
-  font-weight: 700;
-}
-
-.info-investimento p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #555;
-}
-
-
+/* Footer Fim */
 /* Responsividade geral */
 @media (max-width: 1024px) {
+
   .containerleft,
   .containerright {
     width: 100%;
@@ -426,7 +420,8 @@ body {
 
   .prev,
   .next {
-    display: none; /* Esconde botões laterais no mobile para evitar sobreposição */
+    display: none;
+    /* Esconde botões laterais no mobile para evitar sobreposição */
   }
 
   .info-investimento {
