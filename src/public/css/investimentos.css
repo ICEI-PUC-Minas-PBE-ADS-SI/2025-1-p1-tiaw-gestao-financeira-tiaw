@@ -326,6 +326,21 @@ body {
 
 /*End of Carousel*/
 
+#resumo-investimento {
+  margin: 20px auto 0 auto;
+  padding: 0 10px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.card-investimento {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
 
 /* Footer */
 .rodape {
