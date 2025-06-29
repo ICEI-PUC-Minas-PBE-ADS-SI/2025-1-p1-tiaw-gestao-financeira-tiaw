@@ -9,7 +9,7 @@ document.getElementById("formCadastro")?.addEventListener("submit", function (e)
   const senha = document.getElementById("senha").value;
   const salario = document.getElementById("salario").value;
 
-  const novoUsuario = {nome, data, endereco, usuario, senha, salario};
+  const novoUsuario = { nome, data, endereco, usuario, senha, salario };
 
   fetch(`http://localhost:3000/usuarios?usuario=${usuario}`)
     .then(res => res.json())
@@ -70,11 +70,13 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   const adicionar = document.getElementById("adminVisivel");
-  if (user.admin == true) {
+
+  if (user.admin === true) {
     adicionar.style.display = "block";
   } else {
     adicionar.style.display = "none";
   }
+
 
   if (user) {
     const menu = document.getElementById("userMenu");
@@ -103,7 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function logout() {
   localStorage.removeItem("usuarioLogado");
   alert("Você saiu da conta.");
-  location.href = "login.html"; 
+  location.href = "login.html";
 }
 
 function toggleMenu() {

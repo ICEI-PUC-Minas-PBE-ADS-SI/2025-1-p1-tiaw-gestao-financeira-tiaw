@@ -151,14 +151,20 @@ function renderizarLinhaMeta(meta) {
     const restante = meta.valorObjetivo - meta.valorAtual;
     const textoRestante = restante <= 0 ? "Meta alcançada!" : `Faltam ${formatarMoeda(restante)} para alcançar.`;
 
+    // Adicionamos o atributo data-label em cada <td>
+    // O texto em data-label="" corresponde ao cabeçalho da tabela
     tr.innerHTML = `
-        <td>${meta.nome}</td>
-        <td>${formatarMoeda(meta.valorObjetivo)}</td>
-        <td>${formatarMoeda(meta.valorAtual)}</td>
-        <td>${formatarData(meta.dataLimite)}</td>
-        <td><progress value="${progresso}" max="100"></progress> ${progresso}%</td>
-        <td><span class="status status-${status.toLowerCase()}">${status}</span></td>
-        <td class="acoes">
+        <td data-label="Meta">${meta.nome}</td>
+        <td data-label="Valor a alcançar (R$)">${formatarMoeda(meta.valorObjetivo)}</td>
+        <td data-label="Valor guardado (R$)">${formatarMoeda(meta.valorAtual)}</td>
+        <td data-label="Data final">${formatarData(meta.dataLimite)}</td>
+        <td data-label="Progresso">
+            <progress value="${progresso}" max="100"></progress> ${progresso}%
+        </td>
+        <td data-label="Status">
+            <span class="status status-${status.toLowerCase()}">${status}</span>
+        </td>
+        <td data-label="Ações" class="acoes">
             <button onclick="modificarValor('${meta.id}', 'adicionar')">+ Valor</button>
             <button onclick="modificarValor('${meta.id}', 'remover')">- Valor</button>
             <button onclick="editarMeta('${meta.id}')">Editar</button>
