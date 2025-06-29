@@ -648,3 +648,8 @@ td .acoes button:hover {
 .redes-sociais a:hover {
   color: #42e619;
 }
+#grafico-gastos {
+  max-width: 400px;
+  max-height: 400px;
+  margin: 0 auto;
+}

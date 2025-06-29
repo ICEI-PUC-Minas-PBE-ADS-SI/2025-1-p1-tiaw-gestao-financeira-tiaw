@@ -152,54 +152,53 @@ async function gerarGrafico() {
   } catch {
     return alert('Erro ao buscar gastos para o gráfico.');
   }
+
   if (!dados.length) return alert('Nenhum gasto cadastrado para mostrar.');
+
   const totalCat = {};
   dados.forEach(({ categoria, valor }) => {
     totalCat[categoria] = (totalCat[categoria] || 0) + Number(valor);
   });
+
   if (chartInstance) chartInstance.destroy();
+
   chartInstance = new Chart(document.getElementById('grafico-gastos'), {
-    type: 'bar',
+    type: 'pie',
     data: {
       labels: Object.keys(totalCat),
       datasets: [{
-        label: 'Total por categoria (R$)',
+        label: 'Distribuição de Gastos',
         data: Object.values(totalCat),
+        backgroundColor: [
+          '#4e79a7', '#f28e2b', '#e15759',
+          '#76b7b2', '#59a14f', '#edc949',
+          '#af7aa1', '#ff9da7', '#9c755f', '#bab0ab'
+        ],
+        borderWidth: 1,
       }],
     },
     options: {
       responsive: true,
       plugins: {
-        legend: { display: false },
-        title:  { display: true, text: 'Distribuição de Gastos' },
+        legend: {
+          position: 'bottom',
+        },
+        title: {
+          display: true,
+          text: 'Distribuição de Gastos por Categoria',
+        },
       },
-      scales: { y: { beginAtZero: true } },
     },
   });
 }
 
-// Limita datas futuras
 window.addEventListener('load', () => {
   const inputData = document.getElementById('data');
-  const hoje = new Date();
-  const yyyy = hoje.getFullYear();
-  const mm   = String(hoje.getMonth() + 1).padStart(2, '0');
-  const dd   = String(hoje.getDate()).padStart(2, '0');
-  const hojeISO = `${yyyy}-${mm}-${dd}`;
-  const hojeBR  = `${dd}/${mm}/${yyyy}`;
-  inputData.max = hojeISO;
-  inputData.addEventListener('invalid', function () {
-    if (this.validity.rangeOverflow) {
-      const [ano, mes, dia] = this.value.split('-');
-      const dataDigitadaBR = `${dia}/${mes}/${ano}`;
-      this.setCustomValidity(`Uau! temos um viajante do tempo aqui😮. Mas infelizmente só aceitamos datas até hoje: ${hojeBR}.`);
-    } else {
-      this.setCustomValidity('');
-    }
-  });
+
   inputData.addEventListener('input', function () {
     this.setCustomValidity('');
   });
+
   renderTabela(); // Renderiza a tabela ao carregar a página
 });
 

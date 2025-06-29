@@ -586,3 +586,51 @@ progress {
   }
 
 }
+/* ==================== AJUSTES FINAIS MOBILE COM !important ==================== */
+@media (max-width: 768px) {
+
+  /* Esconde menu horizontal tradicional */
+  .pages {
+    display: none !important;
+  }
+
+  /* Mostra o ícone do menu hambúrguer */
+  .fas.fa-bars {
+    display: block !important;
+  }
+
+  /* Garante que o dropdown apareça corretamente */
+  .menu-dropdown.show {
+    display: block !important;
+  }
+
+  /* Centraliza o botão "+ Nova Meta" */
+  #btnNovaMeta {
+    margin: 10px auto !important;
+    display: block !important;
+  }
+
+  /* Rodapé organizado e centralizado no mobile */
+  .rodape {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .logotipo img {
+    max-width: 220px !important;
+    height: auto !important;
+    margin-bottom: 10px !important;
+  }
+
+  /* Espaço extra inferior para não cobrir conteúdo com toast */
+  body {
+    padding-bottom: 80px !important;
+  }
+
+  /* Ajusta largura do formulário */
+  #formularioMeta {
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+}
