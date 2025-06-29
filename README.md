@@ -31,8 +31,8 @@ senha: admin123
 
 
 # Hospedagem do site
-<!-- Colocar aqui o link do site -->
 Link de acesso para o site hospedado:
+<!-- Colocar aqui o link do site -->
 
 
 # Documentação
@@ -52,10 +52,10 @@ Link de acesso para o site hospedado:
 
 # Código
 
-* <a href="/src/public/homepage.html">Código</a>
+* <a href="/src/public/index.html">Código</a>
 
 # Apresentação
-<!-- Colocar o pdf da apresentação nessa ref -->
+
 * <a href="/presentation/Apresentação.pdf">Apresentação do projeto</a>
 
 
