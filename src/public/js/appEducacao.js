@@ -124,7 +124,7 @@ function criarNoticia() {
     const bannerBase64 = await lerImagemComoBase64(bannerFile);
 
     const grupos = document.querySelectorAll(".grupoSubtitulo");
-    
+
     const blocosExtras = [];
 
     for (let grupo of grupos) {
@@ -218,31 +218,31 @@ function mostrarNoticias() {
     `;
   }
   function favorito(iconElement, id) {
-  fetch(`http://localhost:3000/educacao/${id}`)
-    .then(res => res.json())
-    .then(data => {
-      const novoStatus = !data.favoritado;
+    fetch(`http://localhost:3000/educacao/${id}`)
+      .then(res => res.json())
+      .then(data => {
+        const novoStatus = !data.favoritado;
 
-      return fetch(`http://localhost:3000/educacao/${id}`, {
-        method: "PATCH",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({ favoritado: novoStatus })
-      }).then(res => {
-        if (!res.ok) throw new Error("Erro ao atualizar favorito");
+        return fetch(`http://localhost:3000/educacao/${id}`, {
+          method: "PATCH",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({ favoritado: novoStatus })
+        }).then(res => {
+          if (!res.ok) throw new Error("Erro ao atualizar favorito");
 
-        // Aqui está o efeito visual que você queria do segundo código
-        iconElement.classList.toggle('favorito', novoStatus);
-        iconElement.classList.toggle('far', !novoStatus);  // ícone contorno
-        iconElement.classList.toggle('fas', novoStatus);   // ícone preenchido
+          // Aqui está o efeito visual que você queria do segundo código
+          iconElement.classList.toggle('favorito', novoStatus);
+          iconElement.classList.toggle('far', !novoStatus);  // ícone contorno
+          iconElement.classList.toggle('fas', novoStatus);   // ícone preenchido
+        });
+      })
+      .catch(error => {
+        console.error("Erro ao favoritar:", error);
+        alert("Não foi possível atualizar o favorito.");
       });
-    })
-    .catch(error => {
-      console.error("Erro ao favoritar:", error);
-      alert("Não foi possível atualizar o favorito.");
-    });
-}
+  }
 
   noticiasEducativas.innerHTML = strNoticia;
   const botao = document.querySelector(".vejaMais");
@@ -253,15 +253,16 @@ function mostrarNoticias() {
   }
 }
 
-
 /* Função para enviar comentário pelo botão Enviar */
 function EnviarComentario() {
+  const usuarioLogado = JSON.parse(localStorage.getItem("usuarioLogado"));
   const inputComentario = document.getElementById("InserirComentario");
   const textoComentario = inputComentario.value;
   const novoComentario = {
-    usuario: "Comentário Anônimo",
+    usuario: JSON.parse(localStorage.getItem("usuarioLogado"))?.nome,
     comentario: textoComentario
   }
+
   /* Fetch para adicionar o comentário */
   fetch(`http://localhost:3000/educacao/${id}`)
     .then(res => res.json())
@@ -275,6 +276,7 @@ function EnviarComentario() {
         body: JSON.stringify(noticia)
       });
     })
+
     /* Cria o comentário */
     .then(data => {
       const containerUsuario = document.getElementById("comentariosUsuarios");

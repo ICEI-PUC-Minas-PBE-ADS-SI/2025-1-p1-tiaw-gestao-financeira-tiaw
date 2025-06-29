@@ -37,7 +37,7 @@
           <li class="menuHide"><a href="paginaEducacao.html">Educação</a></li>
           <li class="menuHide"><a href="investimentos.html">Investimentos</a></li>
           <li><a href="metas.html">Metas</a></li>
-          <li class="somente-admin"><a href="adicao-dados.html">Adicionar notícia</a></li>
+          <li id="adminVisivel"><a href="adicao-dados.html">Adicionar notícia</a></li>
           <li><a href="favoritos.html">Favoritos</a></li>
           <li><a href="gastostabela.html">Gastos</a></li>
           <li><a href="tutorial.conosco.html">Tutoriais</a></li>
@@ -147,7 +147,7 @@
           for (let i = 0; i < 4; i++) {
             let not = data[i];
             strNoticia += `
-                                <div class="cardEducacao card mb-3 mx-auto" style="width: 70%">
+                                <div class="cardEducacao card mb-3 mx-auto" style="width: 100%">
                                     <div class="row g-0">
                                         <div class="col-md-4">
                                             <a href="colocarAquiLink.html?id=${not.id}">
@@ -159,7 +159,7 @@
                                                 <h5 class="cardTitulo card-title">${not.titulo}</h5>                                        
                                                 </a>
                                                 <p class="card-text">${not.resumo}</p>
-                                                <p class="card-text"><small class="text-body-secondary">${not.data}</small></p>
+                                                <p class="card-text"><small class="text-body-secondary">${not.autor}</small></p>
                                             </div>
                                         </div>
 
