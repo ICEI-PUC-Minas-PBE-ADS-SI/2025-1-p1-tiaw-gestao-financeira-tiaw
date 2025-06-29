@@ -148,35 +148,35 @@
         }).catch(err => console.error(err));
 
 
-      fetch("http://localhost:3000/noticias")
-        .then(res => res.json())
-        .then(data => {
-          const noticia = document.getElementById("noticias");
-          let strNoticia = "";
-          for (let i = 0; i < 4; i++) {
-            let not = data[i];
-            strNoticia += `
-                                <div class="cardEducacao card mb-3 mx-auto" style="width: 100%">
-                                    <div class="row g-0">
-                                        <div class="col-md-4">
-                                            <a href="colocarAquiLink.html?id=${not.id}">
-                                            <img src="${not.imagem}" class="imagemCardNoticia img-fluid rounded-start" alt="..."></a>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <div class="card-body">
-                                                <a href="colocarAquiLink.html?id=${not.id}">
-                                                <h5 class="cardTitulo card-title">${not.titulo}</h5>                                        
-                                                </a>
-                                                <p class="card-text">${not.resumo}</p>
-                                                <p class="card-text"><small class="text-body-secondary">${not.autor}</small></p>
-                                            </div>
-                                        </div>
+     fetch("http://localhost:3000/noticias")
+  .then(res => res.json())
+  .then(data => {
+    const noticia = document.getElementById("noticias");
+    let strNoticia = "";
 
-                                    </div>
-                                </div>`
-          }
-          noticias.innerHTML = strNoticia;
-        }).catch(err => console.error(err));
+    for (let i = 0; i < 4; i++) {
+      let not = data[i];
+      strNoticia += `
+        <div class="cardEducacao card mb-3 mx-auto" style="width: 100%; cursor: pointer;" onclick="abrirModalPorId(${not.id})">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="${not.imagem}" class="imagemCardNoticia img-fluid rounded-start" alt="${not.titulo}">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="cardTitulo card-title">${not.titulo}</h5>
+                <p class="card-text">${not.resumo}</p>
+                <p class="card-text"><small class="text-body-secondary">${not.autor || ''}</small></p>
+              </div>
+            </div>
+          </div>
+        </div>`;
+    }
+
+    noticia.innerHTML = strNoticia;
+  })
+  .catch(err => console.error(err));
+
 
       fetch("http://localhost:3000/investimento")
         .then(res => res.json())
@@ -229,9 +229,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
     crossorigin="anonymous"></script>
-    <script>
-  function abrirModalPorId(el) {
-    const id = el.getAttribute('data-id');
+    
+
+<script>
+  function abrirModalPorId(id) {
     fetch(`http://localhost:3000/noticias/${id}`)
       .then(res => res.json())
       .then(noticia => {
@@ -254,7 +255,6 @@
     }
   });
 </script>
-
 
 
 </body>
