@@ -17,7 +17,7 @@ Todo o grupo concorda com a falta de educação financeira é um dos maiores pro
 Nessa etapa, tentamos identificar quem seriam todas as pessoas envolvidas na nossa solução proposta, desde os que não atuam diretamente e que poderiam somente fornecer informações ou coleta de dados, até os clientes finais / pessoas mais afetadas.
 
 # Mapa de pessoas importantes
-![Mapa Stakeholders](imgs/ProductDiscovery/stakeholders.png)
+![Mapa Stakeholders](/imgs/ProductDiscovery/stakeholders.png)
 
 
 
@@ -39,7 +39,7 @@ Nessa etapa fizemos diversas entrevistas com pessoas diferentes, pelo menos 1 pe
 Aqui mostramos os principais resultados obtidos em todas as entrevistas feitas.
 Essas entrevistas forneceram informações importantes para nossa solução, onde estão as principais lacunas sobre educação financeira e quais são as áreas mais importantes para os entrevistados.
 
-![Highligths de pesquisa](imgs/ProductDiscovery/highlights.png)
+![Highligths de pesquisa](/imgs/ProductDiscovery/highlights.png)
 
 ## Etapa de definição
 
