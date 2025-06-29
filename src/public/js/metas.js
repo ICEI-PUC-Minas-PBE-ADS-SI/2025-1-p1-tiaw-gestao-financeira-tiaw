@@ -12,16 +12,16 @@ const corpoTabela = document.getElementById("corpoTabelaMetas");
 const idMetaInput = document.getElementById("idMeta");
 const tituloFormulario = document.querySelector("#formularioMeta h3");
 
-
 // --- FUNÇÕES DE LÓGICA DA APLICAÇÃO ---
 
 // Carrega todas as metas da API e renderiza na tabela
 async function carregarMetas() {
     try {
-        const response = await fetch(API_URL);
+        const user = JSON.parse(localStorage.getItem("usuarioLogado"));
+        const response = await fetch(`${API_URL}?usuarioId=${user.id}`);
         if (!response.ok) throw new Error("Erro de rede ao buscar metas.");
         const metas = await response.json();
-        
+
         corpoTabela.innerHTML = "";
         metas.forEach(renderizarLinhaMeta);
     } catch (error) {
@@ -34,13 +34,16 @@ async function carregarMetas() {
 async function handleFormSubmit(event) {
     event.preventDefault();
     const id = idMetaInput.value;
+    const user = JSON.parse(localStorage.getItem("usuarioLogado"));
+
     const dadosMeta = {
         nome: document.getElementById("nomeMeta").value,
         valorObjetivo: parseFloat(document.getElementById("valorObjetivo").value),
         valorAtual: parseFloat(document.getElementById("valorAtual").value),
-        dataLimite: document.getElementById("dataLimite").value
+        dataLimite: document.getElementById("dataLimite").value,
+        usuarioId: user.id
     };
-    
+
     const isEditing = !!id;
     const url = isEditing ? `${API_URL}/${id}` : API_URL;
     const method = isEditing ? 'PUT' : 'POST';
@@ -70,7 +73,7 @@ async function removerMeta(id) {
     try {
         const response = await fetch(`${API_URL}/${id}`, { method: 'DELETE' });
         if (!response.ok) throw new Error("Falha ao remover a meta.");
-        
+
         mostrarNotificacao("🗑️ Meta removida com sucesso!");
         carregarMetas();
     } catch (error) {
@@ -91,9 +94,9 @@ async function editarMeta(id) {
         document.getElementById("valorObjetivo").value = meta.valorObjetivo;
         document.getElementById("valorAtual").value = meta.valorAtual;
         document.getElementById("dataLimite").value = meta.dataLimite;
-        
+
         abrirFormulario(true);
-    } catch(error) {
+    } catch (error) {
         console.error("Erro em editarMeta:", error);
         mostrarNotificacao("❌ Erro ao carregar meta para edição.");
     }
@@ -130,15 +133,14 @@ async function modificarValor(id, tipo) {
         });
 
         if (!updateResponse.ok) throw new Error("Falha ao atualizar a meta.");
-        
+
         mostrarNotificacao(tipo === 'adicionar' ? "💰 Valor adicionado!" : "🧾 Valor removido!");
         carregarMetas();
-    } catch(error) {
+    } catch (error) {
         console.error(`Erro em ${tipo}Valor:`, error);
         mostrarNotificacao("❌ Erro ao atualizar o valor.");
     }
 }
-
 
 // --- FUNÇÕES DE UI E AUXILIARES ---
 
@@ -194,14 +196,13 @@ function fecharFormulario() {
 
 function mostrarNotificacao(mensagem) {
     const div = document.getElementById("notificacao");
-    if(!div) return;
+    if (!div) return;
     div.textContent = mensagem;
     div.className = "toast mostrar";
     setTimeout(() => { div.className = "toast"; }, 3000);
 }
 
 // --- INICIALIZAÇÃO E EVENTOS ---
-
 btnNovaMeta.addEventListener("click", () => abrirFormulario(false));
 btnCancelar.addEventListener("click", fecharFormulario);
 formMeta.addEventListener("submit", handleFormSubmit);

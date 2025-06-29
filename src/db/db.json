@@ -191,8 +191,44 @@
       "texto": "O ouro é um dos ativos mais antigos e valorizados da história da humanidade. Ele é visto como um \"porto seguro\" nos investimentos, pois tende a se valorizar em momentos de crise econômica, instabilidade política ou alta inflação. Embora não gere renda como dividendos ou juros, o ouro preserva valor ao longo do tempo, sendo uma excelente opção para diversificação de portfólio. Também é utilizado como proteção contra a desvalorização de moedas locais. É indicado tanto para investidores conservadores quanto para aqueles que buscam equilíbrio em tempos incertos."
     }
   ],
-  "metas": [],
-  "gastos": [],
+  "metas": [
+    {
+      "id": "8572",
+      "nome": "Moto nova",
+      "valorObjetivo": 10000,
+      "valorAtual": 2000,
+      "dataLimite": "2025-06-30",
+      "usuarioId": "2"
+    },
+    {
+      "id": "4896",
+      "nome": "Trocar farol do carro",
+      "valorObjetivo": 500,
+      "valorAtual": 100,
+      "dataLimite": "2025-07-12",
+      "usuarioId": "1"
+    }
+  ],
+  "gastos": [
+    {
+      "id": "d660",
+      "descricao": "Carro",
+      "categoria": "Despezas",
+      "tipo": "Fixo",
+      "valor": "2000.00",
+      "data": "2025-06-30",
+      "usuarioId": "1"
+    },
+    {
+      "id": "f3b0",
+      "descricao": "Financiamento",
+      "categoria": "Moradia",
+      "tipo": "Fixo",
+      "valor": "1500.00",
+      "data": "2025-06-30",
+      "usuarioId": "2"
+    }
+  ],
   "usuarios": [
     {
       "id": "1",

@@ -1,15 +1,16 @@
 let chartInstance = null;
 
 const API_URL = 'http://localhost:3000/gastos';
+const usuarioLogado = JSON.parse(localStorage.getItem("usuarioLogado")); // ← usuário logado
 
-// Função utilitária para buscar todos os gastos
+// Função para buscar apenas os gastos do usuário logado
 async function buscarGastos() {
-  const resp = await fetch(API_URL);
+  const resp = await fetch(`${API_URL}?usuarioId=${usuarioLogado.id}`);
   if (!resp.ok) throw new Error('Erro ao buscar gastos');
   return await resp.json();
 }
 
-// Função utilitária para adicionar um gasto
+// Função para adicionar gasto
 async function adicionarGasto(gasto) {
   const resp = await fetch(API_URL, {
     method: 'POST',
@@ -20,7 +21,7 @@ async function adicionarGasto(gasto) {
   return await resp.json();
 }
 
-// Função utilitária para editar um gasto
+// Função para editar gasto
 async function editarGastoBackend(id, gasto) {
   const resp = await fetch(`${API_URL}/${id}`, {
     method: 'PUT',
@@ -31,7 +32,7 @@ async function editarGastoBackend(id, gasto) {
   return await resp.json();
 }
 
-// Função utilitária para excluir um gasto
+// Função para excluir gasto
 async function excluirGastoBackend(id) {
   const resp = await fetch(`${API_URL}/${id}`, { method: 'DELETE' });
   if (!resp.ok && resp.status !== 204) throw new Error('Erro ao excluir gasto');
@@ -45,7 +46,7 @@ const form        = document.getElementById('form-gasto');
 const tabelaBody  = document.querySelector('#tabela-gastos tbody');
 const feedbackBox = document.getElementById('mensagem-feedback');
 
-// Carrega e renderiza a tabela ao iniciar
+// Renderizar tabela
 async function renderTabela() {
   tabelaBody.innerHTML = '<tr><td colspan="6">Carregando...</td></tr>';
   try {
@@ -55,7 +56,7 @@ async function renderTabela() {
       return;
     }
     tabelaBody.innerHTML = '';
-    gastos.forEach((g, i) => {
+    gastos.forEach((g) => {
       tabelaBody.insertAdjacentHTML(
         'beforeend',
         `
@@ -87,7 +88,16 @@ form.addEventListener('submit', async (e) => {
   const valor     = Number(form.valor.value).toFixed(2);
   const data      = form.data.value;
   if (!descricao || !categoria || !tipo || !valor || !data) return;
-  const novoGasto = { descricao, categoria, tipo, valor, data };
+
+  const novoGasto = {
+    descricao,
+    categoria,
+    tipo,
+    valor,
+    data,
+    usuarioId: usuarioLogado.id // ← associa o gasto ao usuário
+  };
+
   try {
     if (editId === null) {
       await adicionarGasto(novoGasto);
@@ -104,9 +114,7 @@ form.addEventListener('submit', async (e) => {
   }
 });
 
-// Ações de editar/excluir
-// Usa event delegation
-// (Obs: agora usa id do backend)
+// Ações editar/excluir
 tabelaBody.addEventListener('click', async (e) => {
   const idEditar  = e.target.dataset.editar;
   const idExcluir = e.target.dataset.excluir;
@@ -138,13 +146,14 @@ tabelaBody.addEventListener('click', async (e) => {
   }
 });
 
+// Feedback
 function mostrarMensagem(txt) {
   feedbackBox.textContent = txt;
   feedbackBox.style.opacity = 1;
   setTimeout(() => (feedbackBox.style.opacity = 0), 3000);
 }
 
-// Gráfico
+// Gráfico por categoria
 async function gerarGrafico() {
   let dados;
   try {
@@ -180,9 +189,7 @@ async function gerarGrafico() {
     options: {
       responsive: true,
       plugins: {
-        legend: {
-          position: 'bottom',
-        },
+        legend: { position: 'bottom' },
         title: {
           display: true,
           text: 'Distribuição de Gastos por Categoria',
@@ -192,16 +199,14 @@ async function gerarGrafico() {
   });
 }
 
+// Inicializar
 window.addEventListener('load', () => {
   const inputData = document.getElementById('data');
-
   inputData.addEventListener('input', function () {
     this.setCustomValidity('');
   });
 
-  renderTabela(); // Renderiza a tabela ao carregar a página
+  renderTabela(); // carregar tabela
 });
 
-// Deixa gerarGrafico disponível globalmente
 window.gerarGrafico = gerarGrafico;
-
