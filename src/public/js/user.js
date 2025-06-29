@@ -9,7 +9,7 @@ document.getElementById("formCadastro")?.addEventListener("submit", function (e)
   const senha = document.getElementById("senha").value;
   const salario = document.getElementById("salario").value;
 
-  const novoUsuario = { nome, data, endereco, usuario, senha, salario };
+  const novoUsuario = {nome, data, endereco, usuario, senha, salario};
 
   fetch(`http://localhost:3000/usuarios?usuario=${usuario}`)
     .then(res => res.json())
@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function logout() {
   localStorage.removeItem("usuarioLogado");
   alert("Você saiu da conta.");
-  location.href = "login.html"; // redireciona para a tela de login
+  location.href = "login.html"; 
 }
 
 function toggleMenu() {
