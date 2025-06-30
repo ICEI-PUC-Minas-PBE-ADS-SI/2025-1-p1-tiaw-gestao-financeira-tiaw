@@ -125,7 +125,7 @@ json-server --watch ./db/db.json --port 3000 --static ./public
 
 ### Acesse pelo navegador:
 ```
-http://localhost:3000/homepage.html
+http://localhost:3000/index.html
 ```
 
 ---
