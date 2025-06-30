@@ -2,10 +2,9 @@
   "name": "grana-app",
   "version": "1.0.0",
   "description": "Meu site financeiro",
-  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx json-server --watch ./db/db.json --host 0.0.0.0 --port ${PORT:-3000} --static ./public"
+    "start": "node ./node_modules/json-server/bin.js --watch ../db/db.json --host 0.0.0.0 --port ${PORT:-3000} --static ./public"
   },
   "dependencies": {
     "cors": "^2.8.5",
