@@ -32,7 +32,7 @@ senha: admin123
 
 # Hospedagem do site
 Link de acesso para o site hospedado:
-<!-- Colocar aqui o link do site -->
+https://maisgranaa.onrender.com/
 
 
 # Documentação

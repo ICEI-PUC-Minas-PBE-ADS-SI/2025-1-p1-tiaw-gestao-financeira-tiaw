@@ -171,27 +171,18 @@
     <script>
         async function favorito(id) {
             try {
-                // 1. Busca os dados atuais do item no Firebase
-                const res = await fetch(`https://dbgestao-1208c-default-rtdb.firebaseio.com/educacao/${id}.json`);
+                const res = await fetch(`http://localhost:3000/educacao/${id}`);
                 const data = await res.json();
-
-                // 2. Inverte o status do campo "favoritado"
                 const novoStatus = !data.favoritado;
 
-                // 3. Atualiza o item no Firebase com PUT
-                await fetch(`https://dbgestao-1208c-default-rtdb.firebaseio.com/educacao/${id}.json`, {
-                    method: "PUT",
-                    headers: {
-                        "Content-Type": "application/json"
-                    },
-                    body: JSON.stringify({
-                        ...data,
-                        favoritado: novoStatus
-                    })
+                await fetch(`http://localhost:3000/educacao/${id}`, {
+                    method: "PATCH",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ favoritado: novoStatus })
                 });
-
-                // 4. Atualiza a imagem do coração
                 const iconElement = document.getElementById("imgFavoritar");
+                if (data.favoritado == true)
+                    iconElement.src = "/img/img-educacao/coracao-vermelho.png"
 
                 iconElement.src = novoStatus
                     ? "/img/img-educacao/coracao-vermelho.png"
