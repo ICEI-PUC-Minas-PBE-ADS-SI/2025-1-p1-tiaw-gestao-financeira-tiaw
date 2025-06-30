@@ -57,7 +57,3 @@ Link de acesso para o site hospedado:
 # Apresentação
 
 * <a href="/presentation/Apresentação.pdf">Apresentação do projeto</a>
-
-
-* **Pasta docs**: documentação completa do projeto;<!-- links em Registro de software -->
-* **Pasta presentation**: apresentação do projeto; <!-- Adicionar o vídeo em mp4 e slides em pdf -->
