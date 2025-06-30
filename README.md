@@ -57,3 +57,7 @@ Link de acesso para o site hospedado:
 # Apresentação
 
 * <a href="/presentation/Apresentação.pdf">Apresentação do projeto</a>
+
+# Vídeo
+
+* <a href="/presentation/Vídeo-Gestão Financeira.mp4">Vídeo do projeto</a>
