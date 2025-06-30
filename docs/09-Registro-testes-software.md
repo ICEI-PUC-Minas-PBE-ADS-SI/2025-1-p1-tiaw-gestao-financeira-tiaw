@@ -12,28 +12,28 @@ Este documento apresenta as evidências dos testes realizados sobre a aplicaçã
 | **Caso de teste** | **CT-001 – Visualizar conteúdos de educação financeira** |
 |-------------------|------------------------------------------------------------|
 | Requisito associado | RF-001 – A aplicação deve apresentar conteúdos educativos sobre finanças. |
-| Registro de evidência | [https://drive.google.com/file/d/ct-001](https://drive.google.com/file/d/ct-001) |
+| Registro de evidência | <img src="/docs/imgs/prints/printeducação.PNG"> |
 
 ---
 
 | **Caso de teste** | **CT-002 – Exibir detalhes de notícias** |
 |-------------------|--------------------------------------------|
 | Requisito associado | RF-002 – A aplicação deve permitir ao usuário visualizar detalhes de uma notícia. |
-| Registro de evidência | [https://drive.google.com/file/d/ct-002](https://drive.google.com/file/d/ct-002) |
+| Registro de evidência | <img src="/docs/imgs/prints/printnotícias.PNG"> |
 
 ---
 
 | **Caso de teste** | **CT-003 – Cadastrar metas financeiras** |
 |-------------------|-------------------------------------------|
 | Requisito associado | RF-003 – A aplicação deve permitir o registro de metas financeiras. |
-| Registro de evidência | [https://drive.google.com/file/d/ct-003](https://drive.google.com/file/d/ct-003) |
+| Registro de evidência | <img src="/docs/imgs/prints/printmeta.PNG"> |
 
 ---
 
 | **Caso de teste** | **CT-004 – Navegar entre páginas** |
 |-------------------|-------------------------------------|
 | Requisito associado | RF-004 – A aplicação deve permitir navegação funcional entre as seções do site. |
-| Registro de evidência | [https://drive.google.com/file/d/ct-004](https://drive.google.com/file/d/ct-004) |
+| Registro de evidência | <img src="/docs/imgs/prints/navegaçãoprint.PNG"> |
 
 ---
 

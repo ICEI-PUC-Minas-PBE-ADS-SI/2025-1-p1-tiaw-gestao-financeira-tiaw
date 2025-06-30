@@ -479,7 +479,7 @@ progress {
     .navbar .fas.fa-bars { display: block; }
     .logo img { width: 180px; }
     .menuHide { display: list-item; }
-    .menu-dropdown { width: calc(10% - 20px); right: 10px; }
+    .menu-dropdown { width: 120px; right:150px; top: 85px;}
     .rodape { flex-direction: column; text-align: center; }
 
     /* A Transformação da Tabela */

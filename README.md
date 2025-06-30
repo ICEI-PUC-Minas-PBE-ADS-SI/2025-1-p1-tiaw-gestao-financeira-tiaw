@@ -31,8 +31,8 @@ senha: admin123
 
 
 # Hospedagem do site
-<!-- Colocar aqui o link do site -->
 Link de acesso para o site hospedado:
+<!-- Colocar aqui o link do site -->
 
 
 # Documentação
@@ -52,12 +52,8 @@ Link de acesso para o site hospedado:
 
 # Código
 
-* <a href="/src/public/homepage.html">Código</a>
+* <a href="/src/public/index.html">Código</a>
 
 # Apresentação
-<!-- Colocar o pdf da apresentação nessa ref -->
-* <a href="/presentation/README.md">Apresentação do projeto</a>
 
-
-* **Pasta docs**: documentação completa do projeto;<!-- links em Registro de software -->
-* **Pasta presentation**: apresentação do projeto; <!-- Adicionar o vídeo em mp4 e slides em pdf -->
+* <a href="/presentation/Apresentação.pdf">Apresentação do projeto</a>
