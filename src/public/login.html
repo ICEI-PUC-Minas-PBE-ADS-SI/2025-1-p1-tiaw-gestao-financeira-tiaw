@@ -74,17 +74,13 @@
       const usuario = document.getElementById("usuario").value;
       const senha = document.getElementById("senha").value;
       const salario = document.getElementById("salario").value;
-
-      const novoUsuario = { nome, data, endereco, usuario, senha, salario };
+      const admin = false;
+      const novoUsuario = { nome, data, endereco, usuario, senha, salario, admin };
 
       // Antes de cadastrar, verificar se usuário já existe
       fetch("http://localhost:3000/usuarios?usuario=" + encodeURIComponent(usuario))
         .then(res => res.json())
         .then(existingUsers => {
-          if (existingUsers.length > 0) {
-            alert("Este nome de usuário já está em uso. Escolha outro.");
-            return;
-          }
           // Cadastrar
           fetch("http://localhost:3000/usuarios", {
             method: "POST",

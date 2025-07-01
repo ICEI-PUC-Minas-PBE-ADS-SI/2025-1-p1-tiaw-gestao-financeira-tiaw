@@ -24,7 +24,8 @@ document.getElementById('formCadastro').addEventListener('submit', function(even
     endereco,
     usuario,
     senha,
-    salario
+    salario,
+    admin: false
   };
 
   // Envia para o JSON Server
